@@ -6,8 +6,8 @@
   "license": "ISC",
   "author": "",
   "scripts": {
-    "build": "parcel build views/index.ejs",
-    "dev": "parcel views/index.ejs --open",
+    "build": "parcel build index.js",
+    "dev": "parcel index.js --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
