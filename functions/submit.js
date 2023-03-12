@@ -13,7 +13,7 @@ export async function onRequestPost(context) {
   console.log(`[DEBUG]: context = ${context}`)
 
   // Convert context to form data.
-  let data = await context.formData();
+  let data = await context.request.formData();
 
   // DEBUG
   console.log(`[DEBUG]: data = ${data}`)
