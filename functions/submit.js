@@ -12,7 +12,7 @@ export async function onRequestPost(context) {
   //
   // console.log(data)
 
-  console.log(context)
+  console.log(`[DEBUG]: context = ${context}`)
 
   return new Response(html, {
     headers: {
