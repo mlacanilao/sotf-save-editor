@@ -1,24 +1,15 @@
 /**
  * POST /submit
  */
-export async function onRequestPost({ request }) {
+export async function onRequestPost(request) {
   try {
-    let input = await request.formData();
+    // Get data from file upload.
+    let data = await request.formData();
 
-    // Convert FormData to JSON
-    // NOTE: Allows mutliple values per key
-    let tmp, output = {};
-    for (let [key, value] of input) {
-      tmp = output[key];
-      if (tmp === undefined) {
-        output[key] = value;
-      } else {
-        output[key] = [].concat(tmp, value);
-      }
-    }
+    // Convert data to JSON string.
+    let json = JSON.stringify(data, null, 2);
 
-    let pretty = JSON.stringify(output, null, 2);
-    return new Response(pretty, {
+    return new Response(json, {
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
       }
