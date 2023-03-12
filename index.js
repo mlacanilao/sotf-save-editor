@@ -3,7 +3,7 @@ const app = express()
 const port = 443
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.render("index"); // index refers to index.ejs
 })
 
 app.listen(port, () => {
