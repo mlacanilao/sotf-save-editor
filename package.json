@@ -1,9 +1,9 @@
 {
-  "name": " ",
+  "name": "sotf-save-editor",
   "version": "0.0.1",
   "description": "",
-  "keywords": "",
-  "license": "",
+  "keywords": [],
+  "license": "ISC",
   "author": "",
   "scripts": {
     "build": "parcel build index.html",
@@ -13,5 +13,21 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlacanilao/sotf-save-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mlacanilao/sotf-save-editor/issues"
+  },
+  "homepage": "https://github.com/mlacanilao/sotf-save-editor#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
   }
 }
