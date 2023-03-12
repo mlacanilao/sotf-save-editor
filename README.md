@@ -1,0 +1,1 @@
+# sotf-save-editor
