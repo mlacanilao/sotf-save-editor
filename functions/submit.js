@@ -15,11 +15,11 @@ export async function onRequestPost(request) {
     // // DEBUG
     // console.log(json)
 
-    return new Response(json, {
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8'
-      }
-    });
+    // return new Response(data, {
+    //   headers: {
+    //     'Content-Type': 'application/json;charset=utf-8'
+    //   }
+    // });
   } catch (err) {
     return new Response('Error parsing JSON content', { status: 400 });
   }
