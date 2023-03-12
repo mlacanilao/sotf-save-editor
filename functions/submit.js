@@ -6,8 +6,14 @@ export async function onRequestPost(request) {
     // Get data from file upload.
     let data = await request.formData();
 
+    // DEBUG
+    console.log(data)
+
     // Convert data to JSON string.
     let json = JSON.stringify(data, null, 2);
+
+    // DEBUG
+    console.log(json)
 
     return new Response(json, {
       headers: {
