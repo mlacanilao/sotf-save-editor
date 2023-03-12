@@ -11,9 +11,8 @@ export async function onRequestPost(context) {
   // DEBUG
   console.log(`[DEBUG]: data = ${data}`)
 
-  for (const value of data.values()) {
-    console.log(value);
-  }
+  // DEBUG
+  console.log(`[DEBUG]: data.values() = ${data.values()}`)
 
   // Convert data string to JSON.
   let json = JSON.stringify(data, null, 2);
