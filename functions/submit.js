@@ -2,7 +2,7 @@
  * POST /submit
  */
 export async function onRequestPost(request) {
-  try {
+  // try {
     // Get data from file upload.
     let data = await request.formData();
 
@@ -20,7 +20,7 @@ export async function onRequestPost(request) {
         'Content-Type': 'application/json;charset=utf-8'
       }
     });
-  } catch (err) {
-    return new Response('Error parsing JSON content', { status: 400 });
-  }
+  // } catch (err) {
+  //   return new Response('Error parsing JSON content', { status: 400 });
+  // }
 }
