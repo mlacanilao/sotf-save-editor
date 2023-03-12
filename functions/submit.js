@@ -14,6 +14,9 @@ export async function onRequestPost(context) {
   // Convert data string to JSON.
   let json = JSON.stringify(data, null, 2);
 
+  // DEBUG
+  console.log(`[DEBUG]: json = ${json}`)
+
   return new Response(json, {
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
