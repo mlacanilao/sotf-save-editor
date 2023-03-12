@@ -7,10 +7,12 @@ const html = `<!DOCTYPE html>
 /**
  * POST /submit
  */
-export async function onRequestPost(request) {
+export async function onRequestPost(context) {
   // let data = await request.formData();
   //
   // console.log(data)
+
+  console.log(context)
 
   return new Response(html, {
     headers: {
