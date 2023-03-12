@@ -8,9 +8,9 @@ const html = `<!DOCTYPE html>
  * POST /submit
  */
 export async function onRequestPost(request) {
-  let data = await request.formData();
-
-  console.log(data)
+  // let data = await request.formData();
+  //
+  // console.log(data)
 
   return new Response(html, {
     headers: {
