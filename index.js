@@ -4,8 +4,12 @@ const port = 443
 
 app.set('view engine', 'ejs');
 
+// To use js/css files.
+app.use(express.static(__dirname));
+
 app.get('/', (req, res) => {
-  res.render('index'); // index refers to index.ejs
+  // Index refers to index.ejs
+  res.render('index');
 })
 
 app.listen(port, () => {
