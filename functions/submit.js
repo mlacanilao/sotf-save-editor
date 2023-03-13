@@ -15,10 +15,19 @@ export async function onRequestPost(event) {
   console.log(`[DEBUG]: data.values() = ${data.values()}`)
 
   // Get files?
-  let files = event.request.files;
+  let file = data.get('file')
 
   // DEBUG
-  console.log(`[DEBUG]: files = ${files}`)
+  console.log(`[DEBUG]: file = ${file}`)
+
+  // Read file.
+  const reader = new FileReader();
+
+  reader.readAsDataURL(file);
+
+  reader.onload = function() {
+    console.log(reader.result);
+  };
 
   // Convert data string to JSON.
   let json = JSON.stringify([...data], null, 2);
