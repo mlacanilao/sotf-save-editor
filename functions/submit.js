@@ -1,7 +1,7 @@
 /**
  * POST /submit
  */
-export async function onRequestPost(request) {
+export async function onRequestPost({ request }) {
   // Check that the request method is POST
   if (request.method !== 'POST') {
     return new Response('Only POST requests are allowed', {status: 405})
