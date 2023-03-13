@@ -7,7 +7,6 @@ export async function onRequestPost(event) {
   const request = event.request;
   const body = await request.clone().text();
 
-
   // DEBUG
   console.log(`[DEBUG]: event = ${event}`)
   console.log(`[DEBUG]: contentType = ${contentType}`)
