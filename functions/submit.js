@@ -2,17 +2,17 @@
  * POST /submit
  */
 export async function onRequestPost(event) {
-  const { headers } = event.request;
-  const contentType = headers.get('content-type') || '';
-  const request = event.request;
-  const body = await request.clone().text();
-
-  // DEBUG
-  console.log(`[DEBUG]: event = ${event}`)
-  console.log(`[DEBUG]: contentType = ${contentType}`)
-  console.log(`[DEBUG]: request = ${request}`)
-  console.log(`[DEBUG]: body = ${body}`)
-
+  // const { headers } = event.request;
+  // const contentType = headers.get('content-type') || '';
+  // const request = event.request;
+  // const body = await request.clone().text();
+  //
+  // // DEBUG
+  // console.log(`[DEBUG]: event = ${event}`)
+  // console.log(`[DEBUG]: contentType = ${contentType}`)
+  // console.log(`[DEBUG]: request = ${request}`)
+  // console.log(`[DEBUG]: body = ${body}`)
+  //
   // Convert context to form data.
   let data = await event.request.formData();
 
