@@ -1,43 +1,53 @@
 /**
  * POST /submit
  */
-export async function onRequestPost(event) {
-  // DEBUG
-  console.log(`[DEBUG]: event = ${event}`)
+export async function onRequestPost(request) {
+  // Check that the request method is POST
+  if (request.method !== 'POST') {
+    return new Response('Only POST requests are allowed', {status: 405})
+  }
 
-  // Convert context to form data.
-  let data = await event.request.formData();
+  // Get the FormData object from the request body
+  const formData = await request.formData()
 
-  // DEBUG
-  console.log(`[DEBUG]: data = ${data}`)
+  // Get the file from the FormData object using the name attribute of the file input field
+  const file = formData.get('file')
 
-  // DEBUG
-  console.log(`[DEBUG]: data.values() = ${data.values()}`)
+  // Check that a file was uploaded
+  if (!file) {
+    return new Response('No file uploaded', {status: 400})
+  }
 
-  // Get files?
-  let file = data.get('file')
+  // Get the file contents as a Buffer
+  const fileContents = await file.arrayBuffer()
 
-  // DEBUG
-  console.log(`[DEBUG]: file = ${file}`)
+  // Convert the file contents to a string
+  const fileString = new TextDecoder().decode(fileContents)
 
-  // Read file.
-  const reader = new FileReaderSync();
+  // Parse the string into a JSON object
+  const fileJson = JSON.parse(fileString)
 
-  reader.readAsDataURL(file);
+  // Create an HTML template with placeholders for the JSON data
+  const htmlTemplate = `
+    <html>
+      <head>
+        <title>File Upload</title>
+      </head>
+      <body>
+        <h1>File Uploaded Successfully</h1>
+        <p><strong>Name:</strong> {{name}}</p>
+        <p><strong>Email:</strong> {{email}}</p>
+        <p><strong>Message:</strong> {{message}}</p>
+      </body>
+    </html>
+  `
 
-  reader.onload = function() {
-    console.log(reader.result);
-  };
+  // Replace the placeholders in the template with the JSON data
+  const html = htmlTemplate
+    .replace('{{name}}', fileJson.name)
+    .replace('{{email}}', fileJson.email)
+    .replace('{{message}}', fileJson.message)
 
-  // Convert data string to JSON.
-  let json = JSON.stringify([...data], null, 2);
-
-  // DEBUG
-  console.log(`[DEBUG]: json = ${json}`)
-
-  return new Response(json, {
-    headers: {
-      'Content-Type': 'application/json;charset=utf-8',
-    },
-  });
+  // Return the HTML response
+  return new Response(html, {status: 200, headers: {'Content-Type': 'text/html'}})
 }
