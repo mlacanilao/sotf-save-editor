@@ -4,35 +4,21 @@
 export async function onRequestPost(event) {
   const { headers } = event.request;
   const contentType = headers.get('content-type') || '';
+  const request = event.request;
+  const body = await request.clone().text();
 
-  // DEBUG
-  console.log(`[DEBUG]: contentType = ${contentType}`)
 
   // DEBUG
   console.log(`[DEBUG]: event = ${event}`)
+  console.log(`[DEBUG]: contentType = ${contentType}`)
+  console.log(`[DEBUG]: contentType = ${request}`)
+  console.log(`[DEBUG]: contentType = ${body}`)
 
   // Convert context to form data.
   let data = await event.request.formData();
 
   // DEBUG
   console.log(`[DEBUG]: data = ${data}`)
-
-  // Get files?
-  let files = await event.request.files;
-
-  // DEBUG
-  console.log(`[DEBUG]: files = ${files}`)
-
-  // Length
-  const numFiles = files.length;
-
-  // DEBUG
-  console.log(`[DEBUG]: numFiles = ${numFiles}`)
-
-  // Get first file?
-  let file = files[0]
-
-
 
   // Convert data string to JSON.
   let json = JSON.stringify([...data], null, 2);
