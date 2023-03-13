@@ -1,15 +1,15 @@
 /**
  * POST /submit
  */
-export async function onRequestPost(request) {
-  const { headers } = request;
+export async function onRequestPost(context) {
+  const { headers } = context.request;
   const contentType = headers.get('content-type') || '';
 
   // DEBUG
   console.log(`[DEBUG]: contentType = ${contentType}`)
 
   // DEBUG
-  console.log(`[DEBUG]: context = ${request}`)
+  console.log(`[DEBUG]: context = ${context}`)
 
   // Convert context to form data.
   let data = await request.request.formData();
