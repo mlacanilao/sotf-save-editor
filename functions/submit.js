@@ -21,7 +21,7 @@ export async function onRequestPost(event) {
   console.log(`[DEBUG]: files = ${files}`)
 
   // Convert data string to JSON.
-  let json = JSON.stringify([event.request.files], null, 2);
+  let json = JSON.stringify([...data], null, 2);
 
   // DEBUG
   console.log(`[DEBUG]: json = ${json}`)
