@@ -12,7 +12,10 @@ export async function onRequestPost(context) {
   console.log(`[DEBUG]: data = ${data}`)
 
   // DEBUG
-  console.log(`[DEBUG]: data.values() = ${data.values()}`)
+  // Display the key/value pairs
+  for (const pair of data.entries()) {
+    console.log(`${pair[0]}, ${pair[1]}`);
+  }
 
   // Convert data string to JSON.
   let json = JSON.stringify([...data], null, 2);
