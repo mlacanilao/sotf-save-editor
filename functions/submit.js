@@ -11,8 +11,8 @@ export async function onRequestPost(event) {
   // DEBUG
   console.log(`[DEBUG]: event = ${event}`)
   console.log(`[DEBUG]: contentType = ${contentType}`)
-  console.log(`[DEBUG]: contentType = ${request}`)
-  console.log(`[DEBUG]: contentType = ${body}`)
+  console.log(`[DEBUG]: request = ${request}`)
+  console.log(`[DEBUG]: body = ${body}`)
 
   // Convert context to form data.
   let data = await event.request.formData();
