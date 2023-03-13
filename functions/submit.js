@@ -15,6 +15,7 @@ export async function onRequestPost({request}) {
   // Get the file from the FormData object using the name attribute of the file input field
   const file = formData.get('file')
   console.log('File:', file)
+  console.log('File data type:', typeof file)
 
   // Check that a file was uploaded
   if (!file) {
