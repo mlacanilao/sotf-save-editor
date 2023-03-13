@@ -21,7 +21,7 @@ export async function onRequestPost(event) {
   console.log(`[DEBUG]: file = ${file}`)
 
   // Read file.
-  const reader = new FileReader();
+  const reader = new FileReaderSync();
 
   reader.readAsDataURL(file);
 
