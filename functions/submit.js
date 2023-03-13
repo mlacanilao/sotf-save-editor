@@ -12,7 +12,7 @@ export async function onRequestPost(context) {
   console.log(`[DEBUG]: data = ${data}`)
 
   // Get files?
-  const files = context.request.target.files;
+  const files = context.request.files;
 
   console.log(`[DEBUG]: files = ${files[0]}`)
 
