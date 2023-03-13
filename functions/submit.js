@@ -3,6 +3,7 @@ export async function onRequestPost({request}) {
     // Read the contents of the file
     console.log(`Reading file contents...`);
     const fileContent = await request.arrayBuffer();
+    console.log(`fileContent: ${fileContent}`);
 
     // Parse file content as JSON
     console.log(`Parsing file contents as JSON...`);
