@@ -1,3 +1,0 @@
-name = "edge-chat-demo"
-workers_dev = true
-node_compat = true

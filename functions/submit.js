@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 /**
  * POST /submit
  */
@@ -13,11 +11,10 @@ export async function onRequestPost(context) {
   // DEBUG
   console.log(`[DEBUG]: data = ${data}`)
 
-  // DEBUG
-  fs.readFile(context.request.files.file.path, function(err, data){
-    // Do something with the data (which holds the file information)
-    console.log(`[DEBUG]: data = ${data}`)
-  });
+  // Get files?
+  const files = context.request.target.files;
+
+  console.log(`[DEBUG]: files = ${files[0]}`)
 
   // Convert data string to JSON.
   let json = JSON.stringify([...data], null, 2);
