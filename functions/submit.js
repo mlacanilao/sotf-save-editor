@@ -1,4 +1,4 @@
-export async function handleRequest({request}) {
+export async function onRequestPost({request}) {
   try {
     const formData = await request.formData();
     const file = formData.get('file');
