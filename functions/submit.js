@@ -20,6 +20,9 @@ export async function onRequestPost(event) {
   // Get files?
   let files = await event.request.files;
 
+  // DEBUG
+  console.log(`[DEBUG]: files = ${files}`)
+
   // Length
   const numFiles = files.length;
 
