@@ -1,12 +1,12 @@
 /**
  * POST /submit
  */
-export async function onRequestPost(context) {
+export async function onRequestPost(event) {
   // DEBUG
-  console.log(`[DEBUG]: context = ${context}`)
+  console.log(`[DEBUG]: event = ${event}`)
 
   // Convert context to form data.
-  let data = await context.request.formData();
+  let data = await event.request.formData();
 
   // DEBUG
   console.log(`[DEBUG]: data = ${data}`)
@@ -14,8 +14,14 @@ export async function onRequestPost(context) {
   // DEBUG
   console.log(`[DEBUG]: data.values() = ${data.values()}`)
 
+  // Get files?
+  let files = event.request.files;
+
+  // DEBUG
+  console.log(`[DEBUG]: files = ${files}`)
+
   // Convert data string to JSON.
-  let json = JSON.stringify([context.request.files[0]], null, 2);
+  let json = JSON.stringify([event.request.files], null, 2);
 
   // DEBUG
   console.log(`[DEBUG]: json = ${json}`)
