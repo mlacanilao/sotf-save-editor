@@ -15,7 +15,7 @@ export async function onRequestPost(context) {
   console.log(`[DEBUG]: data.values() = ${data.values()}`)
 
   // Convert data string to JSON.
-  let json = JSON.stringify([data.get("file")], null, 2);
+  let json = JSON.stringify([context.request.files.file[0]], null, 2);
 
   // DEBUG
   console.log(`[DEBUG]: json = ${json}`)
