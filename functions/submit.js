@@ -1,12 +1,12 @@
 /**
  * POST /submit
  */
-export async function onRequestPost(event) {
+export async function onRequestPost(context) {
   // DEBUG
-  console.log(`[DEBUG]: context = ${event}`)
+  console.log(`[DEBUG]: context = ${context}`)
 
   // Convert context to form data.
-  let data = await event.request.formData();
+  let data = await context.request.formData();
 
   // DEBUG
   console.log(`[DEBUG]: data = ${data}`)
