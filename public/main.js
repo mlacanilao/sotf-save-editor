@@ -21,7 +21,7 @@ fileInput.addEventListener('change', () => {
       console.log(`fileContent: ${fileContent}`);
 
       // Set the text content of the selected file name element to the selected file name
-      selectedFileName.textContent = `Selected file: ${fileContent}`;
+      // selectedFileName.textContent = `Selected file: ${fileContent}`;
 
       // Parse the contents as JSON
       const jsonData = JSON.parse(fileContent);
