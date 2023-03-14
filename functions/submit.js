@@ -1,16 +1,16 @@
 export async function onRequestPost({request}) {
   try {
     // Get the request body as an ArrayBuffer
-    const body = await request.arrayBuffer();
-    console.log(`body: ${body}`);
+    const buffer = await request.arrayBuffer();
+    console.log(`buffer: ${buffer}`);
 
-    // Convert the ArrayBuffer to a Uint8Array
-    const uint8Array = new Uint8Array(body);
-    console.log(`uint8Array: ${uint8Array}`);
+    // // Convert the ArrayBuffer to a Uint8Array
+    // const uint8Array = new Uint8Array(body);
+    // console.log(`uint8Array: ${uint8Array}`);
 
     // Convert the Uint8Array to a string using TextDecoder
     const decoder = new TextDecoder();
-    const string = decoder.decode(uint8Array);
+    const string = decoder.decode(buffer);
     console.log(`string: ${string}`);
 
     // Parse the string as JSON
