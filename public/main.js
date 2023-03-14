@@ -1,5 +1,6 @@
 // Get the file input element from the DOM
 const fileInput = document.querySelector('#formFile');
+const selectedFileName = document.querySelector('#selectedFileName');
 
 // Add an event listener to the file input element
 fileInput.addEventListener('change', () => {
@@ -17,7 +18,10 @@ fileInput.addEventListener('change', () => {
       const fileContent = fileReader.result;
       // DEBUG
       console.log(`typeof fileContent: ${typeof fileContent}`);
-      console.log(JSON.stringify(fileContent, null, 2));
+      console.log(`fileContent: ${fileContent}`);
+
+      // Set the text content of the selected file name element to the selected file name
+      selectedFileName.textContent = `Selected file: ${fileContent}`;
 
       // Parse the contents as JSON
       const jsonData = JSON.parse(fileContent);
@@ -29,5 +33,12 @@ fileInput.addEventListener('change', () => {
     }
   });
 
-  fileReader.readAsText(file);
+  fetch('https://example.com/my-worker', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(jsonData),
+  })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
 });
