@@ -33,12 +33,12 @@ fileInput.addEventListener('change', () => {
     }
   });
 
-  fetch('https://example.com/my-worker', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(jsonData),
-  })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
+  // fetch('https://example.com/my-worker', {
+  //   method: 'POST',
+  //   headers: { 'Content-Type': 'application/json' },
+  //   body: JSON.stringify(jsonData),
+  // })
+  //   .then(response => response.json())
+  //   .then(data => console.log(data))
+  //   .catch(error => console.error(error));
 });
