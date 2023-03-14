@@ -15,14 +15,14 @@ fileInput.addEventListener('change', () => {
     try {
       // Get the contents of the file
       const fileContent = fileReader.result;
+      // DEBUG
       console.log(`typeof fileContent: ${typeof fileContent}`);
-      console.log(`fileContent: ${fileContent}`);
+      console.log(JSON.stringify(fileContent, null, 2));
 
       // Parse the contents as JSON
       const jsonData = JSON.parse(fileContent);
+      // DEBUG
       console.log(`typeof jsonData: ${typeof jsonData}`);
-
-      // Log the parsed JSON to the console
       console.log(`Parsed file content: ${jsonData}`);
     } catch (err) {
       console.error(`Error parsing file content: ${err}`);
