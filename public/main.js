@@ -33,16 +33,6 @@ fileInput.addEventListener('change', () => {
       // DEBUG
       console.log(`typeof jsonData: ${typeof jsonData}`);
       console.log(`Parsed file content: ${jsonData}`);
-
-      // Send a POST request to the specified URL with JSON data in the request body
-      fetch('https://develop.sotf-save-editor.pages.dev/constructionssavedata', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(jsonData),
-      })
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch(error => console.error(error));
     } catch (err) {
       console.error(`Error parsing file content: ${err}`);
     }
