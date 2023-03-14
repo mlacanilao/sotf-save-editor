@@ -16,6 +16,7 @@ fileInput.addEventListener('change', () => {
       // Get the contents of the file
       const fileContent = fileReader.result;
       console.log(`typeof fileContent: ${typeof fileContent}`);
+      console.log(`fileContent: ${fileContent}`);
 
       // Parse the contents as JSON
       const jsonData = JSON.parse(fileContent);
