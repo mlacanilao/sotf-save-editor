@@ -35,7 +35,7 @@ fileInput.addEventListener('change', () => {
       console.log(`Parsed file content: ${jsonData}`);
 
       // Send a POST request to the specified URL with JSON data in the request body
-      fetch('/constructionssavedata', {
+      fetch('sotf-save-editor.pages.dev/constructionssavedata', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(jsonData),
