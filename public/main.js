@@ -8,6 +8,10 @@ fileInput.addEventListener('change', () => {
   const file = fileInput.files[0];
   console.log(`typeof file: ${typeof file}`);
 
+  // Get the filename of the selected file
+  const fileName = file.name;
+  console.log(`Selected file: ${fileName}`);
+
   // Create a file reader object
   const fileReader = new FileReader();
 
@@ -21,6 +25,7 @@ fileInput.addEventListener('change', () => {
       console.log(`fileContent: ${fileContent}`);
 
       // Set the text content of the selected file name element to the selected file name
+      // DEBUG
       selectedFileName.textContent = `Selected file: ${fileContent}`;
 
       // Parse the contents as JSON
@@ -28,18 +33,21 @@ fileInput.addEventListener('change', () => {
       // DEBUG
       console.log(`typeof jsonData: ${typeof jsonData}`);
       console.log(`Parsed file content: ${jsonData}`);
+
+      // Send a POST request to the specified URL with JSON data in the request body
+      fetch('/constructionssavedata', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(jsonData),
+      })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error(error));
     } catch (err) {
       console.error(`Error parsing file content: ${err}`);
     }
   });
 
   fileReader.readAsText(file);
-  // fetch('https://example.com/my-worker', {
-  //   method: 'POST',
-  //   headers: { 'Content-Type': 'application/json' },
-  //   body: JSON.stringify(jsonData),
-  // })
-  //   .then(response => response.json())
-  //   .then(data => console.log(data))
-  //   .catch(error => console.error(error));
+
 });
