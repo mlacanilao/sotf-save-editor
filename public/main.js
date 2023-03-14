@@ -5,6 +5,7 @@ const fileInput = document.querySelector('#formFile');
 fileInput.addEventListener('change', () => {
   // Get the selected file
   const file = fileInput.files[0];
+  console.log(`typeof file: ${typeof file}`);
 
   // Create a file reader object
   const fileReader = new FileReader();
@@ -14,9 +15,11 @@ fileInput.addEventListener('change', () => {
     try {
       // Get the contents of the file
       const fileContent = fileReader.result;
+      console.log(`typeof fileContent: ${typeof fileContent}`);
 
       // Parse the contents as JSON
       const jsonData = JSON.parse(fileContent);
+      console.log(`typeof jsonData: ${typeof jsonData}`);
 
       // Log the parsed JSON to the console
       console.log(`Parsed file content: ${jsonData}`);
