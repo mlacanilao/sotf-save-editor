@@ -46,6 +46,8 @@ fileInput.addEventListener('change', () => {
         // Loop through the structures and create HTML for each one
         let html = '';
         structures.forEach(structure => {
+          // DEBUG
+          console.log(`structure: ${structure}`);
           if (structure && structure.length > 0 && structure.Position && structure.TypeID) {
             const position = structure.Position;
             console.log(`position: ${position}`);
@@ -58,8 +60,6 @@ fileInput.addEventListener('change', () => {
             html += '<hr/>';
           }
         });
-
-        html = 'test'
 
         // Add the HTML to the page
         selectedFileName.textContent = html;
