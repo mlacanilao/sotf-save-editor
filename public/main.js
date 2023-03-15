@@ -61,6 +61,9 @@ fileInput.addEventListener('change', () => {
           }
         });
 
+        // DEBUG
+        console.log(`html: ${html}`);
+
         // Add the HTML to the page
         selectedFileName.textContent = html;
       }
