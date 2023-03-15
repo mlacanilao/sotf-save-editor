@@ -100,6 +100,13 @@ fileInput.addEventListener('change', () => {
               // Look up the item name using the item ID
               itemName = itemIdsFile[itemId] || "unknown";
               console.log(`itemName: ${itemName}`);
+
+              html += `<div class="mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">Item Name</span>
+                  <input type="text" class="form-control" id="itemName" value="${itemName}">
+                </div>
+              </div>`;
             })
             .catch(error => {
               console.error("Error fetching JSON file: ", error);
@@ -109,12 +116,6 @@ fileInput.addEventListener('change', () => {
           const totalCount = itemBlock.TotalCount;
           console.log(`totalCount: ${totalCount}`);
 
-          html += `<div class="mb-3">
-            <div class="input-group">
-              <span class="input-group-text">Item Name</span>
-              <input type="text" class="form-control" id="itemName" value="${itemName}">
-            </div>
-          </div>`;
           html += `<div class="mb-3">
             <div class="input-group">
               <span class="input-group-text">Item ID</span>
