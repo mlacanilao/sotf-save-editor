@@ -12,9 +12,9 @@
           integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
           crossorigin="anonymous"></script>
 
-  <!-- Dropzone library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.2/min/dropzone.min.css" integrity="sha512-HPvzVDX7PjQ2g0W3+w8mcvJD/nKj1dOyhjnwOc8lLJ1RZ9jz77EaaJTYmKjYU6RmU6iDh6m3T3T50Q6TTi+f1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.2/min/dropzone.min.js" integrity="sha512-2F0SFLH0Ie71KjnmZzg0so4xUOjCUvYR1Ubn0lLsT6KqT03FQ0zZ9jk1EgJz3W8eQ2k3jKd+IwGw/tW8PTJnRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Include Dropzone -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.2/dropzone.min.css" integrity="sha512-dJzA72O/C8Wrl+M0vJfIlM2w1QY+MTg2O1v4H9l3h3qg8+5HT5D5SfuHkwwdJ5WORzJlxvNhC9b74o29fh66lQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.2/min/dropzone.min.js" integrity="sha512-SdI7C+OaALu9aZKbACZJ+MTyIb1O2xjy3Jq/iDf7Y48SK0Iu9TnZjzG2LG7sU6kGYuV7Jy/bFGKwjUIBNGajPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Include main.js script -->
   <script defer src="public/main.js"></script>
@@ -23,20 +23,15 @@
 <div class="container">
 
   <!-- Upload files -->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-8 mx-auto">
-        <form class="dropzone" id="myDropzone">
-          <div class="fallback">
-            <input type="file" name="file" id="formFile" accept=".json"/>
-          </div>
-          <div class="dz-message needsclick">
-            <h3>Drag and drop your save here, or click to select file</h3>
-            <span class="note needsclick">(Only *.json files will be accepted)</span>
-          </div>
-        </form>
-      </div>
-    </div>
+<!--  <div class="mb-3">-->
+<!--    <label for="formFile" class="form-label">Select a JSON file</label>-->
+<!--    <input class="form-control" type="file" id="formFile" accept=".json">-->
+<!--  </div>-->
+
+  <!-- Replace file upload with Dropzone -->
+  <div class="mb-3">
+    <label for="formFile" class="form-label">Drag and drop your save here, or click to select file (Only *.json files will be accepted)</label>
+    <div class="dropzone" id="myDropzone"></div>
   </div>
 
   <!-- Add a placeholder for displaying file contents -->

@@ -1,5 +1,5 @@
 // Get the file input element from the DOM
-const fileInput = document.querySelector('#formFile');
+const fileInput = document.querySelector('#myDropzone');
 const selectedContent = document.querySelector('#content');
 
 // Add an event listener to the file input element
@@ -84,4 +84,25 @@ fileInput.addEventListener('change', () => {
 
   fileReader.readAsText(file);
 
+});
+
+
+// Initialize Dropzone
+Dropzone.autoDiscover = false;
+var myDropzone = new Dropzone("#myDropzone", {
+  url: "/upload",
+  acceptedFiles: ".json",
+  maxFiles: 1,
+  maxFilesize: 10, // in MB
+  dictDefaultMessage: "Drag and drop your save here, or click to select file (Only *.json files will be accepted)",
+  dictInvalidFileType: "Only *.json files are accepted",
+  dictFileTooBig: "File is too big ({{filesize}}MB). Maximum file size is {{maxFilesize}}MB.",
+  init: function() {
+    // Remove file preview and progress bar after upload is complete
+    this.on("success", function(file) {
+      setTimeout(function() {
+        myDropzone.removeAllFiles();
+      }, 3000); // Remove files after 3 seconds
+    });
+  }
 });
