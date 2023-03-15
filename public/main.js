@@ -85,13 +85,13 @@ fileInput.addEventListener('change', () => {
 
       // Loop through the item blocks and create HTML for each one
       itemBlocks.forEach(itemBlock => {
-        if (itemBlock && itemBlock.length > 0 && itemBlock[0].ItemId && itemBlock[0].TotalCount) {
+        // if (itemBlock && itemBlock.length > 0 && itemBlock.ItemId && itemBlock.TotalCount) {
           // Get Item ID
-          const itemId = itemBlock[0].ItemId;
+          const itemId = itemBlock.ItemId;
           console.log(`itemId: ${itemId}`);
 
           // Get total count
-          const totalCount = itemBlock[0].TotalCount;
+          const totalCount = itemBlock.TotalCount;
           console.log(`totalCount: ${totalCount}`);
 
           html += `<div class="mb-3">
@@ -107,7 +107,7 @@ fileInput.addEventListener('change', () => {
             </div>
           </div>`;
           html += '<hr/>';
-        }
+        // }
       });
     }
 
