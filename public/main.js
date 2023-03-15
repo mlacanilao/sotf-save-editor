@@ -19,19 +19,22 @@ fileInput.addEventListener('change', () => {
   fileReader.addEventListener('load', () => {
     try {
       // Get the contents of the file
-      const fileContent = fileReader.result;
+      let fileContent = fileReader.result;
 
       // Remove backslashes
-      const jsonWithoutBackslashes = fileContent.replace(/\\/g, '');
+      fileContent = fileContent.replace(/\\/g, '');
       console.log(`typeof jsonWithoutBackslashes: ${typeof jsonWithoutBackslashes}`);
       console.log(`jsonWithoutBackslashes: ${jsonWithoutBackslashes}`);
+
+      // Remove excess double quotes
+      fileContent = fileContent.replace('"{', '{');
 
       // Set the text content of the selected file name element to the selected file name
       // DEBUG
       // selectedFileName.textContent = `Selected file: ${fileContent}`;
 
       // Parse the contents as JSON
-      const jsonData = JSON.parse(jsonWithoutBackslashes);
+      const jsonData = JSON.parse(fileContent);
       console.log(`typeof jsonData: ${typeof jsonData}`);
       console.log(`Parsed file content: ${jsonData}`);
 
