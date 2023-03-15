@@ -105,6 +105,12 @@ fileInput.addEventListener('change', () => {
         }
       });
     }
+
+    // DEBUG
+    console.log(`html: ${html}`);
+
+    // Add the HTML to the page
+    selectedContent.innerHTML = html;
   });
 
   fileReader.readAsText(file);
