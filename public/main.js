@@ -26,6 +26,7 @@ fileInput.addEventListener('change', () => {
 
       // Remove excess double quotes
       fileContent = fileContent.replace('"{', '{');
+      fileContent = fileContent.replace('"}}', '}}');
       console.log(`typeof fileContent: ${typeof fileContent}`);
       console.log(`fileContent: ${fileContent}`);
 
