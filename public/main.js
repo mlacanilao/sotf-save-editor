@@ -100,7 +100,7 @@ fileInput.addEventListener('change', () => {
         }
 
 
-        if (itemBlock && itemBlock.length > 0 && itemBlock.ItemId && itemBlock.TotalCount) {
+        if (itemBlock && itemBlock.ItemId && itemBlock.TotalCount) {
           // Get Item ID
           const itemId = itemBlock.ItemId;
           console.log(`itemId: ${itemId}`);
