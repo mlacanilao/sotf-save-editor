@@ -71,7 +71,7 @@ fileInput.addEventListener('change', () => {
         console.log(`html: ${html}`);
 
         // Add the HTML to the page
-        selectedContent.textContent = html;
+        selectedContent.innerHTML = html;
       }
     } catch (err) {
       console.error(`Error parsing file content: ${err}`);
