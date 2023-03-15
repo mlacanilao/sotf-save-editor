@@ -1,6 +1,3 @@
-// Import the required modules
-const fs = require("fs");
-
 // Get the file input element from the DOM
 const fileInput = document.querySelector('#formFile');
 const selectedContent = document.querySelector('#content');
@@ -94,7 +91,7 @@ fileInput.addEventListener('change', () => {
           console.log(`itemId: ${itemId}`);
 
           // Read the JSON file containing the item IDs and names
-          const itemIdsFile = fs.readFileSync("../data/item_ids.json");
+          import itemIdsFile from '../data/item_ids.json';
           const itemNames = JSON.parse(itemIdsFile);
 
           // Look up the item name using the item ID
