@@ -81,7 +81,7 @@ fileInput.addEventListener('change', () => {
       });
     } else if (fileName === 'PlayerInventorySaveData.json') {
       // Get the ItemBlocks array from the JSON
-      const itemBlocks = jsonObj.Data.PlayerInventory.ItemInstanceManagerData.ItemBlocks;
+      const itemBlocks = jsonData.Data.PlayerInventory.ItemInstanceManagerData.ItemBlocks;
 
       // Loop through the item blocks and create HTML for each one
       itemBlocks.forEach(itemBlock => {
