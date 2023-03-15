@@ -90,32 +90,21 @@ fileInput.addEventListener('change', () => {
           const itemId = itemBlock.ItemId;
           console.log(`itemId: ${itemId}`);
 
-          // Initialize item name
-          let itemName = '';
+          // Get Item IDs JSON file
+          import itemIdsFile from '../data/item_ids.json' assert {type: 'json'};
 
-          // Read the JSON file containing the item IDs and names
-          fetch("../data/item_ids.json")
-            .then(response => response.json())
-            .then(itemIdsFile => {
-              // Look up the item name using the item ID
-              itemName = itemIdsFile[itemId] || "unknown";
-              console.log(`itemName: ${itemName}`);
-
-              html += `<div class="mb-3">
-                <div class="input-group">
-                  <span class="input-group-text">Item Name</span>
-                  <input type="text" class="form-control" id="itemName" value="${itemName}">
-                </div>
-              </div>`;
-            })
-            .catch(error => {
-              console.error("Error fetching JSON file: ", error);
-            });
+          const itemName = itemIdsFile[itemId] || "unknown";
 
           // Get total count
           const totalCount = itemBlock.TotalCount;
           console.log(`totalCount: ${totalCount}`);
 
+          html += `<div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text">Item Name</span>
+              <input type="text" class="form-control" id="itemName" value="${itemName}">
+            </div>
+          </div>`;
           html += `<div class="mb-3">
             <div class="input-group">
               <span class="input-group-text">Item ID</span>
