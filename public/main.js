@@ -57,13 +57,13 @@ fileInput.addEventListener('change', () => {
 
             html += `<div class="mb-3">
               <div class="input-group">
-                <span class="input-group-text">Type ID:</span>
+                <span class="input-group-text">Type ID</span>
                 <input type="text" class="form-control" id="typeID" value="${typeID}">
               </div>
             </div>`;
             html += `<div class="mb-3">
               <div class="input-group">
-                <span class="input-group-text">Position:</span>
+                <span class="input-group-text">Position</span>
                 <input type="text" class="form-control" id="position" value="(${position.x}, ${position.y}, ${position.z})">
               </div>
             </div>`;
