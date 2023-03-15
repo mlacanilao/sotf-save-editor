@@ -59,6 +59,8 @@ fileInput.addEventListener('change', () => {
           }
         });
 
+        html = 'test'
+
         // Add the HTML to the page
         selectedFileName.textContent = html;
       }
