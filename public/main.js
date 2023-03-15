@@ -1,3 +1,6 @@
+// Get Item IDs JSON file
+import itemIdsFile from '../data/item_ids.json' assert {type: 'json'};
+
 // Get the file input element from the DOM
 const fileInput = document.querySelector('#formFile');
 const selectedContent = document.querySelector('#content');
@@ -90,8 +93,7 @@ fileInput.addEventListener('change', () => {
           const itemId = itemBlock.ItemId;
           console.log(`itemId: ${itemId}`);
 
-          // Get Item IDs JSON file
-          import itemIdsFile from '../data/item_ids.json' assert {type: 'json'};
+
 
           const itemName = itemIdsFile[itemId] || "unknown";
 
