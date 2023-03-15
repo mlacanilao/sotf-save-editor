@@ -1,6 +1,5 @@
 // Get Item IDs JSON file
 import itemIdsFile from '../data/item_ids.json' assert {type: 'json'};
-console.log(`itemIdsFile: ${itemIdsFile}`);
 
 // Get the file input element from the DOM
 const fileInput = document.querySelector('#formFile');
@@ -94,6 +93,7 @@ fileInput.addEventListener('change', () => {
           const itemId = itemBlock.ItemId;
           console.log(`itemId: ${itemId}`);
 
+          // Get item names
           const itemName = itemIdsFile[itemId] || "unknown";
           console.log(`itemName: ${itemName}`);
 
@@ -104,13 +104,13 @@ fileInput.addEventListener('change', () => {
           html += `<div class="mb-3">
             <div class="input-group">
               <span class="input-group-text">Item Name</span>
-              <input type="text" class="form-control" id="itemName" value="${itemName}">
+              <input type="text" class="form-control" id="itemName" value="${itemName}" disabled>
             </div>
           </div>`;
           html += `<div class="mb-3">
             <div class="input-group">
               <span class="input-group-text">Item ID</span>
-              <input type="text" class="form-control" id="itemId" value="${itemId}">
+              <input type="text" class="form-control" id="itemId" value="${itemId}" disabled>
             </div>
           </div>`;
           html += `<div class="mb-3">
