@@ -90,12 +90,15 @@ fileInput.addEventListener('change', () => {
           const itemId = itemBlock.ItemId;
           console.log(`itemId: ${itemId}`);
 
+          // Initialize item name
+          let itemName = '';
+
           // Read the JSON file containing the item IDs and names
           fetch("../data/item_ids.json")
             .then(response => response.json())
             .then(itemIdsFile => {
               // Look up the item name using the item ID
-              const itemName = itemIdsFile[itemId] || "unknown";
+              itemName = itemIdsFile[itemId] || "unknown";
               console.log(`itemName: ${itemName}`);
             })
             .catch(error => {
