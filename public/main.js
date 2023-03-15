@@ -37,7 +37,7 @@ fileInput.addEventListener('change', () => {
       // Parse the contents as JSON
       const jsonData = JSON.parse(fileContent);
       console.log(`typeof jsonData: ${typeof jsonData}`);
-      console.log(`Parsed file content: ${jsonData}`);
+      console.log(`jsonData: ${jsonData}`);
 
       if (fileName === 'ConstructionsSaveData.json') {
         // Get the structures array from the JSON
@@ -47,7 +47,7 @@ fileInput.addEventListener('change', () => {
         // Loop through the structures and create HTML for each one
         let html = '';
         structures.forEach(structure => {
-          if (structure) {
+          if (structure && structure.Position && structure.TypeID) {
             const position = structure.Position;
             console.log(`position: ${position}`);
 
