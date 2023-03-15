@@ -91,7 +91,8 @@ fileInput.addEventListener('change', () => {
           console.log(`itemId: ${itemId}`);
 
           // Read the JSON file containing the item IDs and names
-          import itemIdsFile from '../data/item_ids.json';
+          // import itemIdsFile from '../data/item_ids.json';
+          import itemIdsFile from '../data/item_ids.json' assert { type: 'JSON' };
           const itemNames = JSON.parse(itemIdsFile);
 
           // Look up the item name using the item ID
