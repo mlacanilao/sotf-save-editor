@@ -17,6 +17,9 @@ fileInput.addEventListener('change', () => {
 
   // Set up an event listener to read the file as text and parse it as JSON
   fileReader.addEventListener('load', () => {
+    // Initialize JSON data
+    let jsonData;
+
     try {
       // Get the contents of the file
       let fileContent = fileReader.result;
@@ -31,7 +34,7 @@ fileInput.addEventListener('change', () => {
       console.log(`fileContent: ${fileContent}`);
 
       // Parse the contents as JSON
-      const jsonData = JSON.parse(fileContent);
+      jsonData = JSON.parse(fileContent);
       console.log(`typeof jsonData: ${typeof jsonData}`);
       console.log(`jsonData: ${jsonData}`);
     } catch (err) {
