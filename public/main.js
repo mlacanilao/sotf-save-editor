@@ -85,7 +85,22 @@ fileInput.addEventListener('change', () => {
 
       // Loop through the item blocks and create HTML for each one
       itemBlocks.forEach(itemBlock => {
-        if (itemBlock && itemBlock.ItemId && itemBlock.TotalCount) {
+        // DEBUG
+        if (itemBlock) {
+          console.log(`itemBlock: ${itemBlock}`);
+        }
+        if (itemBlock.length > 0) {
+          console.log(`itemBlock.length: ${itemBlock.length}`);
+        }
+        if (itemBlock.ItemId) {
+          console.log(`itemBlock.ItemId: ${itemBlock.ItemId}`);
+        }
+        if (itemBlock.TotalCount) {
+          console.log(`itemBlock.TotalCount: ${itemBlock.TotalCount}`);
+        }
+
+
+        if (itemBlock && itemBlock.length > 0 && itemBlock.ItemId && itemBlock.TotalCount) {
           // Get Item ID
           const itemId = itemBlock.ItemId;
           console.log(`itemId: ${itemId}`);
