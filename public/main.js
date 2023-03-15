@@ -48,11 +48,11 @@ fileInput.addEventListener('change', () => {
         structures.forEach(structure => {
           // DEBUG
           console.log(`structure: ${structure}`);
-          if (structure && structure[0].Position && structure[0].TypeID) {
-            const position = structure[0].Position;
+          if (structure && structure.length > 0 && structure[0].Position && structure[0].TypeID) {
+            const position = structure.Position;
             console.log(`position: ${position}`);
 
-            const typeID = structure[0].TypeID;
+            const typeID = structure.TypeID;
             console.log(`typeID: ${typeID}`);
 
             html += `<div>Type ID: ${typeID}</div>`;
