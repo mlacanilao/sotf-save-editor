@@ -16,8 +16,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.2/dropzone.min.css" integrity="sha512-dJzA72O/C8Wrl+M0vJfIlM2w1QY+MTg2O1v4H9l3h3qg8+5HT5D5SfuHkwwdJ5WORzJlxvNhC9b74o29fh66lQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.2/min/dropzone.min.js" integrity="sha512-SdI7C+OaALu9aZKbACZJ+MTyIb1O2xjy3Jq/iDf7Y48SK0Iu9TnZjzG2LG7sU6kGYuV7Jy/bFGKwjUIBNGajPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- Include main.js script -->
+  <!-- Include scripts -->
   <script defer src="public/main.js"></script>
+  <script src="public/dropzone.js"></script>
 </head>
 <body>
 <div class="container">
@@ -30,7 +31,7 @@
 
   <!-- Replace file upload with Dropzone -->
   <div class="mb-3">
-    <label for="formFile" class="form-label">Drag and drop your save here, or click to select file (Only *.json files will be accepted)</label>
+    <label for="myDropzone" class="form-label">Drag and drop your save here, or click to select file (Only *.json files will be accepted)</label>
     <div class="dropzone" id="myDropzone"></div>
   </div>
 
