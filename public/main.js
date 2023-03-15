@@ -48,7 +48,11 @@ fileInput.addEventListener('change', () => {
         structures.forEach(structure => {
           if (structure) {
             const position = structure.Position;
+            console.log(`position: ${position}`);
+
             const typeID = structure.TypeID;
+            console.log(`typeID: ${typeID}`);
+
             html += `<div>Type ID: ${typeID}</div>`;
             html += `<div>Position: (${position.x}, ${position.y}, ${position.z})</div>`;
             html += '<hr/>';
