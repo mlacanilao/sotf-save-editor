@@ -1,5 +1,5 @@
 // Get the file input element from the DOM
-const fileInput = document.querySelector('#myDropzone');
+const fileInput = document.querySelector('#formFile');
 const selectedContent = document.querySelector('#content');
 
 // Add an event listener to the file input element

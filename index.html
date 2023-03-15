@@ -30,10 +30,12 @@
 <!--  </div>-->
 
   <!-- Replace file upload with Dropzone -->
-  <div class="mb-3">
-    <label for="myDropzone" class="form-label">Drag and drop your save here, or click to select file (Only *.json files will be accepted)</label>
-    <div class="dropzone" id="myDropzone"></div>
-  </div>
+  <form class="dropzone" id="formFile">
+    <div class="fallback mb-3">
+      <label for="formFile" class="form-label">Select a JSON file</label>
+      <input class="form-control" type="file" accept=".json">
+    </div>
+  </form>
 
   <!-- Add a placeholder for displaying file contents -->
   <div class="mt-3">

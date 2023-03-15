@@ -1,8 +1,8 @@
 // Initialize Dropzone
-var myDropzone = new Dropzone('#myDropzone');
+var formFile = new Dropzone('#formFile');
 
 // Set Dropzone options
-Dropzone.options.myDropzone = {
+Dropzone.options.formFile = {
   acceptedFiles: '.json',
   maxFiles: 1,
   init: function () {
