@@ -12,25 +12,17 @@
           integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
           crossorigin="anonymous"></script>
 
-  <!-- Include Dropzone -->
-  <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
-
   <!-- Include scripts -->
   <script defer src="public/main.js"></script>
-  <script src="public/dropzone.js"></script>
 </head>
 <body>
 <div class="container">
 
   <!-- Upload files -->
-<!--  <div class="mb-3">-->
-<!--    <label for="formFile" class="form-label">Select a JSON file</label>-->
-<!--    <input class="form-control" type="file" id="formFile" accept=".json">-->
-<!--  </div>-->
-
-  <!-- Replace file upload with Dropzone -->
-  <form class="dropzone" id="formFile"></form>
+  <div class="mb-3">
+    <label for="formFile" class="form-label">Select a JSON file</label>
+    <input class="form-control" type="file" id="formFile" accept=".json">
+  </div>
 
   <!-- Add a placeholder for displaying file contents -->
   <div class="mt-3">
