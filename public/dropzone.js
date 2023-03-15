@@ -1,3 +1,6 @@
+// Initialize Dropzone
+var myDropzone = new Dropzone('#myDropzone');
+
 // Set Dropzone options
 Dropzone.options.myDropzone = {
   acceptedFiles: '.json',
@@ -10,6 +13,3 @@ Dropzone.options.myDropzone = {
     });
   }
 };
-
-// Initialize Dropzone
-var myDropzone = new Dropzone('#myDropzone');
