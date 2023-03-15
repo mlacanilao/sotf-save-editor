@@ -26,13 +26,16 @@ fileInput.addEventListener('change', () => {
 
       // Set the text content of the selected file name element to the selected file name
       // DEBUG
-      selectedFileName.textContent = `Selected file: ${fileContent}`;
+      // selectedFileName.textContent = `Selected file: ${fileContent}`;
 
       // Parse the contents as JSON
       const jsonData = JSON.parse(fileContent);
       // DEBUG
       console.log(`typeof jsonData: ${typeof jsonData}`);
       console.log(`Parsed file content: ${jsonData}`);
+
+      // DEBUG
+      selectedFileName.textContent = `Selected file: ${jsonData}`;
     } catch (err) {
       console.error(`Error parsing file content: ${err}`);
     }
