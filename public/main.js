@@ -81,13 +81,18 @@ fileInput.addEventListener('change', () => {
       });
     } else if (fileName === 'PlayerInventorySaveData.json') {
       // Get the ItemBlocks array from the JSON
-      const itemBlocks = jsonData.ItemInstanceManagerData.ItemBlocks;
+      const itemBlocks = jsonObj.Data.PlayerInventory.ItemInstanceManagerData.ItemBlocks;
 
       // Loop through the item blocks and create HTML for each one
       itemBlocks.forEach(itemBlock => {
         if (itemBlock && itemBlock.length > 0 && itemBlock[0].Position && itemBlock[0].TypeID) {
+          // Get Item ID
           const itemId = itemBlock.ItemId;
+          console.log(`itemId: ${itemId}`);
+
+          // Get total count
           const totalCount = itemBlock.TotalCount;
+          console.log(`totalCount: ${totalCount}`);
 
           html += `<div class="mb-3">
             <div class="input-group">
