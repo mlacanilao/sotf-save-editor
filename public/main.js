@@ -42,6 +42,7 @@ fileInput.addEventListener('change', () => {
       if (fileName === 'ConstructionsSaveData.json') {
         // Get the structures array from the JSON
         const structures = jsonData.Data.Constructions.Structures;
+        console.log(`structures: ${structures}`);
 
         // Loop through the structures and create HTML for each one
         let html = '';
