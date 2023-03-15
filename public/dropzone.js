@@ -1,6 +1,3 @@
-// Initialize Dropzone
-var formFile = new Dropzone('#formFile');
-
 // Set Dropzone options
 Dropzone.options.formFile = {
   acceptedFiles: '.json',
@@ -13,3 +10,6 @@ Dropzone.options.formFile = {
     });
   }
 };
+
+// Initialize Dropzone
+var formFile = new Dropzone('#formFile');
