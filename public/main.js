@@ -56,12 +56,16 @@ fileInput.addEventListener('change', () => {
             console.log(`typeID: ${typeID}`);
 
             html += `<div class="mb-3">
-              <label for="typeID" class="form-label">Type ID</label>
-              <input type="text" class="form-control" id="typeID" value="${typeID}">
+              <div class="input-group">
+                <span class="input-group-text">Type ID:</span>
+                <input type="text" class="form-control" id="typeID" value="${typeID}">
+              </div>
             </div>`;
             html += `<div class="mb-3">
-              <label for="position" class="form-label">Position</label>
-              <input type="text" class="form-control" id="position" value="(${position.x}, ${position.y}, ${position.z})">
+              <div class="input-group">
+                <span class="input-group-text">Position:</span>
+                <input type="text" class="form-control" id="position" value="(${position.x}, ${position.y}, ${position.z})">
+              </div>
             </div>`;
             html += '<hr/>';
           }
