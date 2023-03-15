@@ -46,7 +46,7 @@ fileInput.addEventListener('change', () => {
         // Loop through the structures and create HTML for each one
         let html = '';
         structures.forEach(structure => {
-          if (structure && structure.Position && structure.TypeID) {
+          if (structure && structure.length > 0 && structure.Position && structure.TypeID) {
             const position = structure.Position;
             console.log(`position: ${position}`);
 
