@@ -1,5 +1,6 @@
 // Get Item IDs JSON file
 import itemIdsFile from '../data/item_ids.json' assert {type: 'json'};
+console.log(`itemIdsFile: ${itemIdsFile}`);
 
 // Get the file input element from the DOM
 const fileInput = document.querySelector('#formFile');
@@ -93,9 +94,8 @@ fileInput.addEventListener('change', () => {
           const itemId = itemBlock.ItemId;
           console.log(`itemId: ${itemId}`);
 
-
-
           const itemName = itemIdsFile[itemId] || "unknown";
+          console.log(`itemName: ${itemName}`);
 
           // Get total count
           const totalCount = itemBlock.TotalCount;
