@@ -30,63 +30,79 @@ fileInput.addEventListener('change', () => {
       console.log(`typeof fileContent: ${typeof fileContent}`);
       console.log(`fileContent: ${fileContent}`);
 
-      // Set the text content of the selected file name element to the selected file name
-      // DEBUG
-      // selectedFileName.textContent = `Selected file: ${fileContent}`;
-
       // Parse the contents as JSON
       const jsonData = JSON.parse(fileContent);
       console.log(`typeof jsonData: ${typeof jsonData}`);
       console.log(`jsonData: ${jsonData}`);
-
-      if (fileName === 'ConstructionsSaveData.json') {
-        // Get the structures array from the JSON
-        const structures = jsonData.Data.Constructions.Structures;
-
-        // Loop through the structures and create HTML for each one
-        let html = '';
-        structures.forEach(structure => {
-          // DEBUG
-          console.log(`structure: ${structure}`);
-          if (structure && structure.length > 0 && structure[0].Position && structure[0].TypeID) {
-            const position = structure[0].Position;
-            console.log(`position: ${position}`);
-
-            const typeID = structure[0].TypeID;
-            console.log(`typeID: ${typeID}`);
-
-            html += `<div class="mb-3">
-              <div class="input-group">
-                <span class="input-group-text">Type ID</span>
-                <input type="text" class="form-control" id="typeID" value="${typeID}">
-              </div>
-            </div>`;
-            html += `<div class="mb-3">
-              <div class="input-group">
-                <span class="input-group-text">Position</span>
-                <span class="input-group-text">X</span>
-                <input type="text" class="form-control" id="position" value="${position.x}">
-                <span class="input-group-text">Y</span>
-                <input type="text" class="form-control" id="position" value="${position.y}">
-                <span class="input-group-text">Z</span>
-                <input type="text" class="form-control" id="position" value="${position.z}">
-              </div>
-            </div>`;
-            html += '<hr/>';
-          }
-        });
-
-        // DEBUG
-        console.log(`html: ${html}`);
-
-        // Add the HTML to the page
-        selectedContent.innerHTML = html;
-      }
     } catch (err) {
       console.error(`Error parsing file content: ${err}`);
+    }
+
+    // Initialize dynamic html
+    let html = '';
+
+    if (fileName === 'ConstructionsSaveData.json') {
+      // Get the structures array from the JSON
+      const structures = jsonData.Data.Constructions.Structures;
+
+      // Loop through the structures and create HTML for each one
+      structures.forEach(structure => {
+        if (structure && structure.length > 0 && structure[0].Position && structure[0].TypeID) {
+          // Get position
+          const position = structure[0].Position;
+          console.log(`position: ${position}`);
+
+          // Get Type ID
+          const typeID = structure[0].TypeID;
+          console.log(`typeID: ${typeID}`);
+
+          html += `<div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text">Type ID</span>
+              <input type="text" class="form-control" id="typeID" value="${typeID}">
+            </div>
+          </div>`;
+          html += `<div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text">Position</span>
+              <span class="input-group-text">X</span>
+              <input type="text" class="form-control" id="position" value="${position.x}">
+              <span class="input-group-text">Y</span>
+              <input type="text" class="form-control" id="position" value="${position.y}">
+              <span class="input-group-text">Z</span>
+              <input type="text" class="form-control" id="position" value="${position.z}">
+            </div>
+          </div>`;
+          html += '<hr/>';
+        }
+      });
+    } else if (fileName === 'PlayerInventorySaveData.json') {
+      // Get the ItemBlocks array from the JSON
+      const itemBlocks = jsonData.ItemInstanceManagerData.ItemBlocks;
+
+      // Loop through the item blocks and create HTML for each one
+      itemBlocks.forEach(itemBlock => {
+        if (itemBlock && itemBlock.length > 0 && itemBlock[0].Position && itemBlock[0].TypeID) {
+          const itemId = itemBlock.ItemId;
+          const totalCount = itemBlock.TotalCount;
+
+          html += `<div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text">Item ID</span>
+              <input type="text" class="form-control" id="itemId" value="${itemId}">
+            </div>
+          </div>`;
+          html += `<div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text">Total Count</span>
+              <input type="text" class="form-control" id="totalCount" value="${totalCount}">
+            </div>
+          </div>`;
+          html += '<hr/>';
+        }
+      });
     }
   });
 
   fileReader.readAsText(file);
-
 });
