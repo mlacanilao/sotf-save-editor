@@ -34,8 +34,25 @@ fileInput.addEventListener('change', () => {
       console.log(`typeof jsonData: ${typeof jsonData}`);
       console.log(`Parsed file content: ${jsonData}`);
 
-      // DEBUG
-      selectedFileName.textContent = `Selected file: ${jsonData}`;
+      if (fileName === 'ConstructionsSaveData.json') {
+        // Get the structures array from the JSON
+        const structures = jsonData.Data.Constructions.Structures;
+
+        // Loop through the structures and create HTML for each one
+        let html = '';
+        structures.forEach(structure => {
+          if (structure) {
+            const position = structure.Position;
+            const typeID = structure.TypeID;
+            html += `<div>Type ID: ${typeID}</div>`;
+            html += `<div>Position: (${position.x}, ${position.y}, ${position.z})</div>`;
+            html += '<hr/>';
+          }
+        });
+
+        // Add the HTML to the page
+        selectedFileName.textContent = html;
+      }
     } catch (err) {
       console.error(`Error parsing file content: ${err}`);
     }
