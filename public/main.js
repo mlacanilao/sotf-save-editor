@@ -85,7 +85,7 @@ fileInput.addEventListener('change', () => {
 
       // Loop through the item blocks and create HTML for each one
       itemBlocks.forEach(itemBlock => {
-        // if (itemBlock && itemBlock.length > 0 && itemBlock.ItemId && itemBlock.TotalCount) {
+        if (itemBlock && itemBlock.ItemId && itemBlock.TotalCount) {
           // Get Item ID
           const itemId = itemBlock.ItemId;
           console.log(`itemId: ${itemId}`);
@@ -107,7 +107,7 @@ fileInput.addEventListener('change', () => {
             </div>
           </div>`;
           html += '<hr/>';
-        // }
+        }
       });
     }
 
