@@ -23,11 +23,11 @@ fileInput.addEventListener('change', () => {
 
       // Remove backslashes
       fileContent = fileContent.replace(/\\/g, '');
-      console.log(`typeof jsonWithoutBackslashes: ${typeof jsonWithoutBackslashes}`);
-      console.log(`jsonWithoutBackslashes: ${jsonWithoutBackslashes}`);
 
       // Remove excess double quotes
       fileContent = fileContent.replace('"{', '{');
+      console.log(`typeof fileContent: ${typeof fileContent}`);
+      console.log(`fileContent: ${fileContent}`);
 
       // Set the text content of the selected file name element to the selected file name
       // DEBUG
