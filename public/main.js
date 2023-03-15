@@ -1,3 +1,6 @@
+// Import the required modules
+const fs = require("fs");
+
 // Get the file input element from the DOM
 const fileInput = document.querySelector('#formFile');
 const selectedContent = document.querySelector('#content');
@@ -90,10 +93,23 @@ fileInput.addEventListener('change', () => {
           const itemId = itemBlock.ItemId;
           console.log(`itemId: ${itemId}`);
 
+          // Read the JSON file containing the item IDs and names
+          const itemIdsFile = fs.readFileSync("../data/item_ids.json");
+          const itemNames = JSON.parse(itemIdsFile);
+
+          // Look up the item name using the item ID
+          const itemName = itemNames[itemId] || "unknown";
+
           // Get total count
           const totalCount = itemBlock.TotalCount;
           console.log(`totalCount: ${totalCount}`);
 
+          html += `<div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text">Item Name</span>
+              <input type="text" class="form-control" id="itemName" value="${itemName}">
+            </div>
+          </div>`;
           html += `<div class="mb-3">
             <div class="input-group">
               <span class="input-group-text">Item ID</span>
