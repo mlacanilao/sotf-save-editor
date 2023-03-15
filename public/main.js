@@ -65,7 +65,7 @@ fileInput.addEventListener('change', () => {
           html += `<div class="mb-3">
             <div class="input-group">
               <span class="input-group-text">Type ID</span>
-              <input type="text" class="form-control" id="typeID" value="${typeID}">
+              <input type="text" class="form-control" id="typeID" value="${typeID}" disabled>
             </div>
           </div>`;
           html += `<div class="mb-3">
