@@ -1,6 +1,6 @@
 // Get the file input element from the DOM
 const fileInput = document.querySelector('#formFile');
-const selectedFileName = document.querySelector('#selectedFileName');
+const selectedContent = document.querySelector('#content');
 
 // Add an event listener to the file input element
 fileInput.addEventListener('change', () => {
@@ -55,8 +55,14 @@ fileInput.addEventListener('change', () => {
             const typeID = structure[0].TypeID;
             console.log(`typeID: ${typeID}`);
 
-            html += `<div>Type ID: ${typeID}</div>`;
-            html += `<div>Position: (${position.x}, ${position.y}, ${position.z})</div>`;
+            html += `<div class="mb-3">
+              <label for="typeID" class="form-label">Type ID:</label>
+              <input type="text" class="form-control" id="typeID" value="${typeID}">
+            </div>`;
+            html += `<div class="mb-3">
+              <label for="position" class="form-label">Position:</label>
+              <input type="text" class="form-control" id="position" value="(${position.x}, ${position.y}, ${position.z})">
+            </div>`;
             html += '<hr/>';
           }
         });
@@ -65,7 +71,7 @@ fileInput.addEventListener('change', () => {
         console.log(`html: ${html}`);
 
         // Add the HTML to the page
-        selectedFileName.textContent = html;
+        selectedContent.textContent = html;
       }
     } catch (err) {
       console.error(`Error parsing file content: ${err}`);
