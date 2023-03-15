@@ -85,13 +85,13 @@ fileInput.addEventListener('change', () => {
 
       // Loop through the item blocks and create HTML for each one
       itemBlocks.forEach(itemBlock => {
-        if (itemBlock && itemBlock.length > 0 && itemBlock.ItemId && itemBlock.TotalCount) {
+        if (itemBlock && itemBlock.length > 0 && itemBlock[0].ItemId && itemBlock[0].TotalCount) {
           // Get Item ID
-          const itemId = itemBlock.ItemId;
+          const itemId = itemBlock[0].ItemId;
           console.log(`itemId: ${itemId}`);
 
           // Get total count
-          const totalCount = itemBlock.TotalCount;
+          const totalCount = itemBlock[0].TotalCount;
           console.log(`totalCount: ${totalCount}`);
 
           html += `<div class="mb-3">
