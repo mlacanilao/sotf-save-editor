@@ -65,11 +65,11 @@ fileInput.addEventListener('change', () => {
               <div class="input-group">
                 <span class="input-group-text">Position</span>
                 <span class="input-group-text">X</span>
-                <input type="text" class="form-control" id="position" value="${position.x})">
+                <input type="text" class="form-control" id="position" value="${position.x}">
                 <span class="input-group-text">Y</span>
-                <input type="text" class="form-control" id="position" value="${position.y})">
+                <input type="text" class="form-control" id="position" value="${position.y}">
                 <span class="input-group-text">Z</span>
-                <input type="text" class="form-control" id="position" value="${position.z})">
+                <input type="text" class="form-control" id="position" value="${position.z}">
               </div>
             </div>`;
             html += '<hr/>';
