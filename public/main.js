@@ -1,5 +1,5 @@
 // Get Item IDs JSON file
-import itemIdsFile from '../data/itemIDs.json' assert {type: 'json'};
+import itemIDsFile from '../data/itemIDs.json' assert {type: 'json'};
 
 // Get the file input element from the DOM
 const fileInput = document.querySelector('#formFile');
@@ -104,37 +104,38 @@ fileInput.addEventListener('change', () => {
           </thead>
           <tbody>`;
 
-      // Loop through the item blocks and create HTML for each one
-      itemBlocks.forEach(itemBlock => {
-        if (itemBlock && itemBlock.ItemId && itemBlock.TotalCount) {
-          // Get Item ID
-          const itemId = itemBlock.ItemId;
-          console.log(`itemId: ${itemId}`);
+      // Loop through the itemIDsFile and create HTML for each one
+      itemIDsFile.forEach(itemData => {
+        // Get Item ID
+        const itemId = itemData.itemId;
+        console.log(`itemId: ${itemId}`);
 
-          // Get item names
-          const itemName = itemIdsFile[itemId] || "unknown";
-          console.log(`itemName: ${itemName}`);
+        // Get item names
+        const itemName = itemData.name;
+        console.log(`itemName: ${itemName}`);
 
-          // Get total count
-          const totalCount = itemBlock.TotalCount;
-          console.log(`totalCount: ${totalCount}`);
+        // Find the corresponding itemBlock
+        const itemBlock = itemBlocks.find(block => block.ItemId === parseInt(itemId, 10));
 
-          html +=
-            `<tr>
-               <td class="text-muted" id="itemId">${itemId}</td>
-               <td class="text-muted" id="itemName">${itemName}</td>
-               <td>
-                 <div class="input-group">
-                   <input type="text" class="form-control" id="totalCount" value="${totalCount}">
-                   <button class="btn btn-outline-secondary" type="button" id="maxButton">Max</button>
-                 </div>
-               </td>
-             </tr>`;
-        }
+        // Get total count if the itemBlock is found, otherwise set it to 0
+        const totalCount = itemBlock ? itemBlock.TotalCount : 0;
+
+        html +=
+          `<tr>
+             <td class="text-muted" id="itemId">${itemId}</td>
+             <td class="text-muted" id="itemName">${itemName}</td>
+             <td>
+               <div class="input-group">
+                 <input type="text" class="form-control" id="totalCount" value="${totalCount}">
+                 <button class="btn btn-outline-secondary" type="button" id="maxButton">Max</button>
+               </div>
+             </td>
+           </tr>`;
       });
 
       // Close the table
-      html += `</tbody>
+      html +=
+        `</tbody>
          </table>`;
     }
 
