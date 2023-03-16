@@ -77,10 +77,10 @@ fileInput.addEventListener('change', () => {
 
           html +=
             `<tr>
-               <td><input type="text" class="form-control" id="typeID" value="${typeID}" disabled></td>
-               <td><input type="text" class="form-control" id="position" value="${position.x}"></td>
-               <td><input type="text" class="form-control" id="position" value="${position.y}"></td>
-               <td><input type="text" class="form-control" id="position" value="${position.z}"></td>
+               <td class="text-muted" id="typeID">${typeID}</td>
+               <td id="position">${position.x}</td>
+               <td id="position">${position.y}</td>
+               <td id="position">${position.z}</td>
              </tr>`;
         }
       });
@@ -121,9 +121,9 @@ fileInput.addEventListener('change', () => {
 
           html +=
             `<tr>
-               <td><input type="text" class="form-control" id="itemName" value="${itemName}" disabled></td>
-               <td><input type="text" class="form-control" id="itemId" value="${itemId}" disabled></td>
-               <td><input type="text" class="form-control" id="totalCount" value="${totalCount}"></td>
+               <td class="text-muted" id="itemName">${itemName}</td>
+               <td class="text-muted" id="itemId">${itemId}</td>
+               <td id="totalCount">${totalCount}</td>
              </tr>`;
         }
       });
