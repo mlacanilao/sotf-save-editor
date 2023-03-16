@@ -1,5 +1,5 @@
 // Get Item IDs JSON file
-import itemIdsFile from '../data/item_ids.json' assert {type: 'json'};
+import itemIdsFile from '../data/itemIDs.json' assert {type: 'json'};
 
 // Get the file input element from the DOM
 const fileInput = document.querySelector('#formFile');
@@ -123,7 +123,12 @@ fileInput.addEventListener('change', () => {
             `<tr>
                <td class="text-muted" id="itemId">${itemId}</td>
                <td class="text-muted" id="itemName">${itemName}</td>
-               <td contenteditable="true" id="totalCount">${totalCount}</td>
+               <td>
+                 <div class="input-group">
+                   <input type="text" class="form-control" id="totalCount" value="${totalCount}">
+                   <button class="btn btn-outline-secondary" type="button" id="maxButton">Max</button>
+                 </div>
+               </td>
              </tr>`;
         }
       });
