@@ -138,17 +138,6 @@ fileInput.addEventListener('change', () => {
       html +=
         `</tbody>
          </table>`;
-
-      // Add event listeners to the "Max" buttons
-      itemIDsFile.forEach(itemData => {
-        const itemId = itemData.itemId;
-        const maxButton = document.getElementById(`maxButton-${itemId}`);
-        const totalCountInput = document.getElementById(`totalCount-${itemId}`);
-
-        maxButton.addEventListener('click', () => {
-          totalCountInput.value = itemData.max;
-        });
-      });
     }
 
     // DEBUG
@@ -156,6 +145,17 @@ fileInput.addEventListener('change', () => {
 
     // Add the HTML to the page
     selectedContent.innerHTML = html;
+
+    // Add event listeners to the "Max" buttons
+    itemIDsFile.forEach(itemData => {
+      const itemId = itemData.itemId;
+      const maxButton = document.getElementById(`maxButton-${itemId}`);
+      const totalCountInput = document.getElementById(`totalCount-${itemId}`);
+
+      maxButton.addEventListener('click', () => {
+        totalCountInput.value = itemData.max;
+      });
+    });
   });
 
   fileReader.readAsText(file);
