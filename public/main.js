@@ -95,7 +95,7 @@ fileInput.addEventListener('change', () => {
 
       // Start the table
       html +=
-        `<input type="text" id="searchInput" class="form-control form-control-dark mb-3" placeholder="Search by Item Name">
+        `<input type="text" id="searchInput" class="form-control form-control-dark mb-3 bg-dark text-white" placeholder="Search by Item Name">
          <table class="table table-dark">
           <thead>
             <tr>
