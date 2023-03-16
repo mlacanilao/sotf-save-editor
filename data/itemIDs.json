@@ -28,21 +28,21 @@
   },
   {
     "itemId": "346",
-    "name": "ShotgunRail",
+    "name": "Shotgun Rail",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "351",
-    "name": "GrabBag",
+    "name": "Grab Bag",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "353",
-    "name": "StunGun",
+    "name": "Stun Gun",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -59,14 +59,14 @@
   },
   {
     "itemId": "354",
-    "name": "NightVisionGoggles",
+    "name": "Night Vision Goggles",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "355",
-    "name": "CompactPistol",
+    "name": "Compact Pistol",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -86,7 +86,7 @@
   },
   {
     "itemId": "356",
-    "name": "ModernAxe",
+    "name": "Modern Axe",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -113,7 +113,7 @@
   },
   {
     "itemId": "358",
-    "name": "ShotgunPumpAction",
+    "name": "Shotgun Pump Action",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -140,7 +140,7 @@
   },
   {
     "itemId": "360",
-    "name": "TacticalBow",
+    "name": "Tactical Bow",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -164,21 +164,21 @@
   },
   {
     "itemId": "362",
-    "name": "9mmAmmo",
+    "name": "9mm Ammo",
     "max": 1000,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "363",
-    "name": "SlugAmmo",
+    "name": "Slug Ammo",
     "max": 1000,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "364",
-    "name": "BuckshotAmmo",
+    "name": "Buckshot Ammo",
     "max": 1000,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -192,7 +192,7 @@
   },
   {
     "itemId": "366",
-    "name": "TrackerDart",
+    "name": "Tracker Dart",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -206,84 +206,84 @@
   },
   {
     "itemId": "368",
-    "name": "CrossbowAmmoBolt",
+    "name": "Crossbow Ammo Bolt",
     "max": 15,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "369",
-    "name": "StunGunAmmo",
+    "name": "Stun Gun Ammo",
     "max": 1000,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "370",
-    "name": "PistolAmmoBox",
+    "name": "Pistol Ammo Box",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "371",
-    "name": "ShotgunAmmoBoxBuckshot",
+    "name": "Shotgun Ammo Box Buckshot",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "372",
-    "name": "ShotgunAmmoBoxSlug",
+    "name": "Shotgun Ammo Box Slug",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "373",
-    "name": "TacticalBowAmmo",
+    "name": "Tactical Bow Ammo",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "374",
-    "name": "PistolSuppressor",
+    "name": "Pistol Suppressor",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "375",
-    "name": "LaserSightMod",
+    "name": "Laser Sight Mod",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "376",
-    "name": "CompactPistolRail",
+    "name": "Compact Pistol Rail",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "377",
-    "name": "ScopeMod",
+    "name": "Scope Mod",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "378",
-    "name": "FlashlightMod",
+    "name": "Flashlight Mod",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "379",
-    "name": "TacticalAxe",
+    "name": "Tactical Axe",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -303,7 +303,7 @@
   },
   {
     "itemId": "380",
-    "name": "CombatKnife",
+    "name": "Combat Knife",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -330,21 +330,21 @@
   },
   {
     "itemId": "382",
-    "name": "GrenadeAmmo",
+    "name": "Grenade Ammo",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "383",
-    "name": "RifleRailMod",
+    "name": "Rifle Rail Mod",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "384",
-    "name": "CrossbowQuiverMod",
+    "name": "Crossbow Quiver Mod",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -358,7 +358,7 @@
   },
   {
     "itemId": "387",
-    "name": "RifleAmmo",
+    "name": "Rifle Ammo",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -372,21 +372,21 @@
   },
   {
     "itemId": "389",
-    "name": "MolotovAmmo",
+    "name": "Molotov Ammo",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "390",
-    "name": "3dPrinterResin",
+    "name": "3d Printer Resin",
     "max": 1000,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "391",
-    "name": "RedMask",
+    "name": "Red Mask",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -433,7 +433,7 @@
   },
   {
     "itemId": "394",
-    "name": "TacticalChainsaw",
+    "name": "Tactical Chainsaw",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -459,14 +459,14 @@
   },
   {
     "itemId": "395",
-    "name": "LogPlank",
+    "name": "Log Plank",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "396",
-    "name": "TaserStick",
+    "name": "Taser Stick",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -492,35 +492,35 @@
   },
   {
     "itemId": "397",
-    "name": "ShiitakeMushroom",
+    "name": "Shiitake Mushroom",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "398",
-    "name": "KingOysterMushroom",
+    "name": "King Oyster Mushroom",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "399",
-    "name": "HydnumRepandumMushroom",
+    "name": "Hydnum Repandum Mushroom",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "400",
-    "name": "FlyAmanitaMushroom",
+    "name": "Fly Amanita Mushroom",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "401",
-    "name": "TurtleEgg",
+    "name": "Turtle Egg",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -574,21 +574,21 @@
   },
   {
     "itemId": "406",
-    "name": "QuarterLog",
+    "name": "Quarter Log",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "408",
-    "name": "HalfLog",
+    "name": "Half Log",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "409",
-    "name": "ThreeQuarterLog",
+    "name": "Three Quarter Log",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -609,14 +609,14 @@
   },
   {
     "itemId": "413",
-    "name": "PlasmaLighter",
+    "name": "Plasma Lighter",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "414",
-    "name": "VodkaBottle",
+    "name": "Vodka Bottle",
     "max": 6,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -630,14 +630,14 @@
   },
   {
     "itemId": "416",
-    "name": "CircuitBoard",
+    "name": "Circuit Board",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "417",
-    "name": "TimeBomb",
+    "name": "Time Bomb",
     "max": 3,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -651,7 +651,7 @@
   },
   {
     "itemId": "419",
-    "name": "DuctTape",
+    "name": "Duct Tape",
     "max": 100,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -665,14 +665,14 @@
   },
   {
     "itemId": "421",
-    "name": "RamenNoodles",
+    "name": "Ramen Noodles",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "422",
-    "name": "RepairTool",
+    "name": "Repair Tool",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -692,28 +692,28 @@
   },
   {
     "itemId": "423",
-    "name": "NovelA",
+    "name": "Novel A",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "424",
-    "name": "NovelB",
+    "name": "Novel B",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "425",
-    "name": "CerealBox",
+    "name": "Cereal Box",
     "max": 4,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "426",
-    "name": "3dPrintedFlask",
+    "name": "3d Printed Flask",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -729,21 +729,21 @@
   },
   {
     "itemId": "427",
-    "name": "3dPrintedKnife",
+    "name": "3d Printed Knife",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "428",
-    "name": "3dPrintedSled",
+    "name": "3d Printed Sled",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "429",
-    "name": "3dPrintedUnderwaterMask",
+    "name": "3d Printed Underwater Mask",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -757,7 +757,7 @@
   },
   {
     "itemId": "431",
-    "name": "FireAxe",
+    "name": "Fire Axe",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -777,7 +777,7 @@
   },
   {
     "itemId": "432",
-    "name": "CanOpener",
+    "name": "Can Opener",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -801,14 +801,14 @@
   },
   {
     "itemId": "434",
-    "name": "CannedFood",
+    "name": "Canned Food",
     "max": 6,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "435",
-    "name": "GoldMask",
+    "name": "Gold Mask",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -839,14 +839,14 @@
   },
   {
     "itemId": "438",
-    "name": "MrePack",
+    "name": "Mre Pack",
     "max": 6,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "439",
-    "name": "EnergyDrink",
+    "name": "Energy Drink",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -860,14 +860,14 @@
   },
   {
     "itemId": "441",
-    "name": "EnergyBar",
+    "name": "Energy Bar",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "443",
-    "name": "CraftedBow",
+    "name": "Crafted Bow",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -928,7 +928,7 @@
   },
   {
     "itemId": "449",
-    "name": "DevilsClub",
+    "name": "Devils Club",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -942,7 +942,7 @@
   },
   {
     "itemId": "451",
-    "name": "AloeVera",
+    "name": "Aloe Vera",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -963,35 +963,35 @@
   },
   {
     "itemId": "454",
-    "name": "ArrowleafBalsamroot",
+    "name": "Arrowleaf Balsamroot",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "455",
-    "name": "HealthMix",
+    "name": "Health Mix",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "456",
-    "name": "HealthMixPlus",
+    "name": "Health Mix Plus",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "457",
-    "name": "StunGunAmmoBox",
+    "name": "Stun Gun Ammo Box",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "458",
-    "name": "BatteryCharger",
+    "name": "Battery Charger",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -1015,21 +1015,21 @@
   },
   {
     "itemId": "460",
-    "name": "BatteryPack",
+    "name": "Battery Pack",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "461",
-    "name": "EnergyMix",
+    "name": "Energy Mix",
     "max": 3,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "462",
-    "name": "EnergyMixPlus",
+    "name": "Energy Mix Plus",
     "max": 3,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -1043,7 +1043,7 @@
   },
   {
     "itemId": "464",
-    "name": "CatFood",
+    "name": "Cat Food",
     "max": 5,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -1064,7 +1064,7 @@
   },
   {
     "itemId": "467",
-    "name": "AlbumCover",
+    "name": "Album Cover",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -1078,14 +1078,14 @@
   },
   {
     "itemId": "469",
-    "name": "AirCanister",
+    "name": "Air Canister",
     "max": 4,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "470",
-    "name": "AirgunScope",
+    "name": "Airgun Scope",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -1108,21 +1108,21 @@
   },
   {
     "itemId": "472",
-    "name": "DeerHide",
+    "name": "Deer Hide",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "473",
-    "name": "LeafArmour",
+    "name": "Leaf Armour",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "474",
-    "name": "CraftedSpear",
+    "name": "Crafted Spear",
     "max": 5,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -1156,14 +1156,14 @@
   },
   {
     "itemId": "476",
-    "name": "SmallRock",
+    "name": "Small Rock",
     "max": 30,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "477",
-    "name": "CraftedClub",
+    "name": "Crafted Club",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -1183,7 +1183,7 @@
   },
   {
     "itemId": "478",
-    "name": "ClimbingAxe",
+    "name": "Climbing Axe",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -1197,7 +1197,7 @@
   },
   {
     "itemId": "480",
-    "name": "SeveredArm",
+    "name": "Severed Arm",
     "max": 2,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -1229,7 +1229,7 @@
   },
   {
     "itemId": "481",
-    "name": "SeveredLeg",
+    "name": "Severed Leg",
     "max": 2,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -1261,7 +1261,7 @@
   },
   {
     "itemId": "482",
-    "name": "SeveredHead",
+    "name": "Severed Head",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -1283,7 +1283,7 @@
   },
   {
     "itemId": "483",
-    "name": "EmergencyPack",
+    "name": "Emergency Pack",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -1317,28 +1317,28 @@
   },
   {
     "itemId": "486",
-    "name": "WalkieTalkie",
+    "name": "Walkie Talkie",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "487",
-    "name": "SilkPyjamas",
+    "name": "Silk Pyjamas",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "488",
-    "name": "BlueTShirt",
+    "name": "Blue TShirt",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "489",
-    "name": "TacticalPants",
+    "name": "Tactical Pants",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -1352,7 +1352,7 @@
   },
   {
     "itemId": "491",
-    "name": "OldJacket",
+    "name": "Old Jacket",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -1366,21 +1366,21 @@
   },
   {
     "itemId": "493",
-    "name": "LeatherJacket",
+    "name": "Leather Jacket",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "494",
-    "name": "BoneArmour",
+    "name": "Bone Armour",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "495",
-    "name": "TacticalJacket",
+    "name": "Tactical Jacket",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -1394,14 +1394,14 @@
   },
   {
     "itemId": "497",
-    "name": "FoodTray",
+    "name": "Food Tray",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "498",
-    "name": "GRABSLaserPointer",
+    "name": "GRABSLaser Pointer",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -1415,14 +1415,14 @@
   },
   {
     "itemId": "500",
-    "name": "PuffyJacket",
+    "name": "Puffy Jacket",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "501",
-    "name": "TacticalBoots",
+    "name": "Tactical Boots",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -1463,49 +1463,49 @@
   },
   {
     "itemId": "505",
-    "name": "LaserMeasureTool",
+    "name": "Laser Measure Tool",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "506",
-    "name": "TurtleShell",
+    "name": "Turtle Shell",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "507",
-    "name": "CraftedArrow",
+    "name": "Crafted Arrow",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "508",
-    "name": "LootPouch",
+    "name": "Loot Pouch",
     "max": 6,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "509",
-    "name": "BunkerPamphlet",
+    "name": "Bunker Pamphlet",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "511",
-    "name": "ContactTrigger",
+    "name": "Contact Trigger",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "512",
-    "name": "FoodTrayFilled",
+    "name": "Food Tray Filled",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -1519,42 +1519,42 @@
   },
   {
     "itemId": "514",
-    "name": "ContactSpringTrigger",
+    "name": "Contact Spring Trigger",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "515",
-    "name": "TutorialPageBasicBuilding",
+    "name": "Tutorial Page Basic Building",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "516",
-    "name": "TutorialPageTarpTent",
+    "name": "Tutorial Page Tarp Tent",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "517",
-    "name": "CookingPot",
+    "name": "Cooking Pot",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "518",
-    "name": "PaperTarget",
+    "name": "Paper Target",
     "max": 50,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "519",
-    "name": "DeerHideArmour",
+    "name": "Deer Hide Armour",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -1568,14 +1568,14 @@
   },
   {
     "itemId": "521",
-    "name": "EmailPrintoutCaveLighting",
+    "name": "Email Printout Cave Lighting",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "522",
-    "name": "RopeGun",
+    "name": "Rope Gun",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -1592,21 +1592,21 @@
   },
   {
     "itemId": "523",
-    "name": "ZiplineRope",
+    "name": "Zipline Rope",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "524",
-    "name": "GolfBall",
+    "name": "Golf Ball",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "525",
-    "name": "GolfPutter",
+    "name": "Golf Putter",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {
@@ -1626,7 +1626,7 @@
   },
   {
     "itemId": "526",
-    "name": "EmailPrintoutMrPuffyWill",
+    "name": "Email Printout Mr Puffy Will",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -1640,7 +1640,7 @@
   },
   {
     "itemId": "528",
-    "name": "EmailPrintoutMrPuffyFinancial",
+    "name": "Email Printout Mr Puffy Financial",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
@@ -1663,420 +1663,420 @@
   },
   {
     "itemId": "530",
-    "name": "BlueprintDryingRack",
+    "name": "Blueprint Drying Rack",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "531",
-    "name": "BlueprintStickChair",
+    "name": "Blueprint Stick Chair",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "532",
-    "name": "BlueprintStickBed",
+    "name": "Blueprint Stick Bed",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "533",
-    "name": "BlueprintWeaponRack",
+    "name": "Blueprint Weapon Rack",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "534",
-    "name": "EmailPrintoutGolfA",
+    "name": "Email Printout Golf A",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "535",
-    "name": "EmailPrintoutGolfB",
+    "name": "Email Printout Golf B",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "536",
-    "name": "EmailPrintoutGolfC",
+    "name": "Email Printout Golf C",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "537",
-    "name": "EmailPrintoutGolfD",
+    "name": "Email Printout Golf D",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "538",
-    "name": "EmailPrintoutPaintingA",
+    "name": "Email Printout Painting A",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "539",
-    "name": "EmailPrintoutAstrologyA",
+    "name": "Email Printout Astrology A",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "540",
-    "name": "EmailPrintoutAstrologyB",
+    "name": "Email Printout Astrology B",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "541",
-    "name": "EmailPrintoutAstrologyC",
+    "name": "Email Printout Astrology C",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "542",
-    "name": "EmailPrintoutPoliticianA",
+    "name": "Email Printout Politician A",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "543",
-    "name": "EmailPrintoutPoliticianB",
+    "name": "Email Printout Politician B",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "544",
-    "name": "EmailPrintoutPoliticianC",
+    "name": "Email Printout Politician C",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "545",
-    "name": "EmailPrintoutBalletA",
+    "name": "Email Printout Ballet A",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "546",
-    "name": "EmailPrintoutSqueakyShoesA",
+    "name": "Email Printout Squeaky Shoes A",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "547",
-    "name": "EmailPrintoutSqueakyShoesB",
+    "name": "Email Printout Squeaky Shoes B",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "548",
-    "name": "EmailPrintoutSqueakyShoesC",
+    "name": "Email Printout Squeaky Shoes C",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "549",
-    "name": "BlueprintTrapBoneMaker",
+    "name": "Blueprint Trap Bone Maker",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "550",
-    "name": "BlueprintTrapFlySwatter",
+    "name": "Blueprint Trap Fly Swatter",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "551",
-    "name": "BlueprintTrapSmallAnimalCatcher",
+    "name": "Blueprint Trap Small Animal Catcher",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "552",
-    "name": "BlueprintBook",
+    "name": "Blueprint Book",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "553",
-    "name": "TechMesh",
+    "name": "Tech Mesh",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "554",
-    "name": "TechArmour",
+    "name": "Tech Armour",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "555",
-    "name": "VirginiaTrackSuit",
+    "name": "Virginia Track Suit",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "556",
-    "name": "VirginiaDress",
+    "name": "Virginia Dress",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "557",
-    "name": "VirginiaLeatherSuit",
+    "name": "Virginia Leather Suit",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "558",
-    "name": "VirginiaCamoSuit",
+    "name": "Virginia Camo Suit",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "559",
-    "name": "3dPrintedArrowHeads",
+    "name": "3d Printed Arrow Heads",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "560",
-    "name": "3dPrintedGrapplingHook",
+    "name": "3d Printed Grappling Hook",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "561",
-    "name": "3dPrintedFlowerPot",
+    "name": "3d Printed Flower Pot",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "562",
-    "name": "HolovilleNoticeA",
+    "name": "Holoville Notice A",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "563",
-    "name": "HolovilleNoticeB",
+    "name": "Holoville Notice B",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "564",
-    "name": "HolovilleNoticeC",
+    "name": "Holoville Notice C",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "565",
-    "name": "HolovilleNoticeD",
+    "name": "Holoville Notice D",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "566",
-    "name": "KeyCardMaintenance",
+    "name": "Key Card Maintenance",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "567",
-    "name": "KeyCardGuest",
+    "name": "Key Card Guest",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "568",
-    "name": "KeyCardVIP",
+    "name": "Key Card VIP",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "569",
-    "name": "FoodCubeBrain",
+    "name": "Food Cube Brain",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "570",
-    "name": "FoodCubeSteak",
+    "name": "Food Cube Steak",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "571",
-    "name": "FoodCubeSteakAndBacon",
+    "name": "Food Cube Steak And Bacon",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "572",
-    "name": "GoldenArmour",
+    "name": "Golden Armour",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "573",
-    "name": "SleepingBag",
+    "name": "Sleeping Bag",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "574",
-    "name": "NovelC",
+    "name": "Novel C",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "575",
-    "name": "NovelD",
+    "name": "Novel D",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "576",
-    "name": "QuarterLogPlank",
+    "name": "Quarter Log Plank",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "577",
-    "name": "HalfLogPlank",
+    "name": "Half Log Plank",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "578",
-    "name": "ThreeQuarterLogPlank",
+    "name": "Three Quarter Log Plank",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "579",
-    "name": "BlueprintBoneChair",
+    "name": "Blueprint Bone Chair",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "580",
-    "name": "BlueprintStickLadder",
+    "name": "Blueprint Stick Ladder",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "581",
-    "name": "BlueprintBirdHouse",
+    "name": "Blueprint Bird House",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "582",
-    "name": "BlueprintFishTrap",
+    "name": "Blueprint Fish Trap",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "583",
-    "name": "BlueprintStorageBox",
+    "name": "Blueprint Storage Box",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "584",
-    "name": "BlueprintMannequin",
+    "name": "Blueprint Mannequin",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "585",
-    "name": "BlueprintScarecrow",
+    "name": "Blueprint Scarecrow",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "586",
-    "name": "BlueprintPlanterWall",
+    "name": "Blueprint Planter Wall",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "587",
-    "name": "BlueprintPlanterFloor",
+    "name": "Blueprint Planter Floor",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "588",
-    "name": "BlueprintBoneChandelier",
+    "name": "Blueprint Bone Chandelier",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "589",
-    "name": "TutorialBook",
+    "name": "Tutorial Book",
     "max": 1,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -2090,28 +2090,28 @@
   },
   {
     "itemId": "591",
-    "name": "BlueprintSmallLogCabin",
+    "name": "Blueprint Small Log Cabin",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "592",
-    "name": "CreepySkin",
+    "name": "Creepy Skin",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "593",
-    "name": "CreepyArmour",
+    "name": "Creepy Armour",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "594",
-    "name": "GuaranaBerries",
+    "name": "Guarana Berries",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -2125,231 +2125,231 @@
   },
   {
     "itemId": "596",
-    "name": "AloeVeraSeed",
+    "name": "Aloe Vera Seed",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "597",
-    "name": "ArrowleafSeed",
+    "name": "Arrowleaf Seed",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "598",
-    "name": "BlackberrySeed",
+    "name": "Blackberry Seed",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "599",
-    "name": "BlueberrySeed",
+    "name": "Blueberry Seed",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "600",
-    "name": "DevilsClubSeed",
+    "name": "Devils Club Seed",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "601",
-    "name": "FireweedSeed",
+    "name": "Fireweed Seed",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "602",
-    "name": "GuaranaSeed",
+    "name": "Guarana Seed",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "603",
-    "name": "HorsetailSeed",
+    "name": "Horsetail Seed",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "604",
-    "name": "SalmonberrySeed",
+    "name": "Salmonberry Seed",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "605",
-    "name": "ChicorySeed",
+    "name": "Chicory Seed",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "606",
-    "name": "YarroSeed",
+    "name": "Yarro Seed",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "607",
-    "name": "BlueprintStorageRocks",
+    "name": "Blueprint Storage Rocks",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "608",
-    "name": "BlueprintStorageBones",
+    "name": "Blueprint Storage Bones",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "609",
-    "name": "BlueprintStorageLogs",
+    "name": "Blueprint Storage Logs",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "610",
-    "name": "BlueprintStorageSticks",
+    "name": "Blueprint Storage Sticks",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "611",
-    "name": "NumbersPrintout",
+    "name": "Numbers Printout",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "612",
-    "name": "NewspaperCutout",
+    "name": "Newspaper Cutout",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "613",
-    "name": "NewspaperCutoutOutbid",
+    "name": "Newspaper Cutout Outbid",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "614",
-    "name": "EmailPrintoutGovernmentA",
+    "name": "Email Printout Government A",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "615",
-    "name": "EmailPrintoutGovernmentB",
+    "name": "Email Printout Government B",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "616",
-    "name": "EmailPrintoutGovernmentC",
+    "name": "Email Printout Government C",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "617",
-    "name": "StockPricePrintout",
+    "name": "Stock Price Printout",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "618",
-    "name": "3dPrintedArrow",
+    "name": "3d Printed Arrow",
     "max": 20,
     "manuallyVerified": true,
     "UniqueItems": {}
   },
   {
     "itemId": "619",
-    "name": "VirginiaSwimSuit",
+    "name": "Virginia Swim Suit",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "620",
-    "name": "BlueprintTable",
+    "name": "Blueprint Table",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "621",
-    "name": "BlueprintShelf",
+    "name": "Blueprint Shelf",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "622",
-    "name": "BlueprintRockPath",
+    "name": "Blueprint Rock Path",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "623",
-    "name": "BlueprintWallShelf",
+    "name": "Blueprint Wall Shelf",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "624",
-    "name": "BlueprintWallTorch",
+    "name": "Blueprint Wall Torch",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "625",
-    "name": "BlueprintHangingSkullLight",
+    "name": "Blueprint Hanging Skull Light",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "626",
-    "name": "HangGlider",
+    "name": "Hang Glider",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "627",
-    "name": "MrPufftonTableCard",
+    "name": "Mr Puffton Table Card",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
   },
   {
     "itemId": "628",
-    "name": "MrsPufftonTableCard",
+    "name": "Mrs Puffton Table Card",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}
