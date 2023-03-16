@@ -94,9 +94,12 @@ fileInput.addEventListener('change', () => {
       const itemBlocks = jsonData.Data.PlayerInventory.ItemInstanceManagerData.ItemBlocks;
 
       // Start the table
-      html +=
-        `<input type="text" id="searchInput" class="form-control mb-3 bg-dark text-white dark-placeholder" placeholder="Search by Item Name">
-         <table class="table table-dark">
+      html += `
+        <div class="alert alert-warning" role="alert">
+          Warning: Setting this value higher than the recommended maximum may cause instability, unexpected behavior, or other unintended consequences in your game. Proceed with caution.
+        </div>\`;
+        <input type="text" id="searchInput" class="form-control mb-3 bg-dark text-white dark-placeholder" placeholder="Search by Item Name">
+          <table class="table table-dark">
           <thead>
             <tr>
               <th scope="col">Item ID</th>
