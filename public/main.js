@@ -97,7 +97,7 @@ fileInput.addEventListener('change', () => {
       html += `
         <div class="alert alert-warning" role="alert">
           Warning: Setting this value higher than the recommended maximum may cause instability, unexpected behavior, or other unintended consequences in your game. Proceed with caution.
-        </div>\`;
+        </div>
         <input type="text" id="searchInput" class="form-control mb-3 bg-dark text-white dark-placeholder" placeholder="Search by Item Name">
           <table class="table table-dark">
           <thead>
