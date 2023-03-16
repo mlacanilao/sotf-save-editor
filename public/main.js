@@ -95,19 +95,19 @@ fileInput.addEventListener('change', () => {
 
       // Start the table
       html += `
-        <div class="alert alert-warning" role="alert">
-          Warning: Setting this value higher than the recommended maximum may cause instability, unexpected behavior, or other unintended consequences in your game. Proceed with caution.
-        </div>
-        <input type="text" id="searchInput" class="form-control mb-3 bg-dark text-white dark-placeholder" placeholder="Search by Item Name">
-          <table class="table table-dark">
-          <thead>
-            <tr>
-              <th scope="col">Item ID</th>
-              <th scope="col">Item Name</th>
-              <th scope="col">Total Count</th>
-            </tr>
-          </thead>
-          <tbody>`;
+      <div class="alert alert-warning" role="alert">
+        Warning: Setting this value higher than the recommended maximum may cause instability, unexpected behavior, or other unintended consequences in your game. Proceed with caution.
+      </div>
+      <input type="text" id="searchInput" class="form-control mb-3 bg-dark text-white dark-placeholder" placeholder="Search by Item Name">
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Item ID</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Total Count</th>
+          </tr>
+        </thead>
+        <tbody>`;
 
       // Loop through the itemIDsFile and create HTML for each one
       itemIDsFile.forEach(itemData => {
@@ -125,23 +125,23 @@ fileInput.addEventListener('change', () => {
         // Get total count if the itemBlock is found, otherwise set it to 0
         const totalCount = itemBlock ? itemBlock.TotalCount : 0;
 
-        html +=
-          `<tr>
-             <td class="text-white" id="itemId-${itemId}">${itemId}</td>
-             <td class="text-white" id="itemName-${itemId}">${itemName}</td>
-             <td>
-               <div class="input-group">
-                 <input type="text" class="form-control bg-dark text-white" id="totalCount-${itemId}" value="${totalCount}">
-                 <button class="btn btn-outline-light" type="button" id="maxButton-${itemId}">Max</button>
-               </div>
-             </td>
-           </tr>`;
+        html += `
+        <tr>
+          <td class="text-white" id="itemId-${itemId}">${itemId}</td>
+          <td class="text-white" id="itemName-${itemId}">${itemName}</td>
+          <td>
+          <div class="input-group">
+            <input type="text" class="form-control bg-dark text-white" id="totalCount-${itemId}" value="${totalCount}">
+            <button class="btn btn-outline-light" type="button" id="maxButton-${itemId}">Max</button>
+          </div>
+          </td>
+        </tr>`;
       });
 
       // Close the table
-      html +=
-        `</tbody>
-         </table>`;
+      html += `
+        </tbody>
+      </table>`;
     }
 
     // DEBUG
