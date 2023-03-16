@@ -51,6 +51,18 @@ fileInput.addEventListener('change', () => {
       // Get the structures array from the JSON
       const structures = jsonData.Data.Constructions.Structures;
 
+      // Start the table
+      html += `<table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Type ID</th>
+                <th scope="col">Position X</th>
+                <th scope="col">Position Y</th>
+                <th scope="col">Position Z</th>
+              </tr>
+            </thead>
+            <tbody>`;
+
       // Loop through the structures and create HTML for each one
       structures.forEach(structure => {
         if (structure && structure.length > 0 && structure[0].Position && structure[0].TypeID) {
@@ -62,26 +74,18 @@ fileInput.addEventListener('change', () => {
           const typeID = structure[0].TypeID;
           console.log(`typeID: ${typeID}`);
 
-          html += `<div class="mb-3">
-            <div class="input-group">
-              <span class="input-group-text">Type ID</span>
-              <input type="text" class="form-control" id="typeID" value="${typeID}" disabled>
-            </div>
-          </div>`;
-          html += `<div class="mb-3">
-            <div class="input-group">
-              <span class="input-group-text">Position</span>
-              <span class="input-group-text">X</span>
-              <input type="text" class="form-control" id="position" value="${position.x}">
-              <span class="input-group-text">Y</span>
-              <input type="text" class="form-control" id="position" value="${position.y}">
-              <span class="input-group-text">Z</span>
-              <input type="text" class="form-control" id="position" value="${position.z}">
-            </div>
-          </div>`;
-          html += '<hr/>';
+          html += `<tr>
+                 <td><input type="text" class="form-control" id="typeID" value="${typeID}" disabled></td>
+                 <td><input type="text" class="form-control" id="position" value="${position.x}"></td>
+                 <td><input type="text" class="form-control" id="position" value="${position.y}"></td>
+                 <td><input type="text" class="form-control" id="position" value="${position.z}"></td>
+               </tr>`;
         }
       });
+
+      // Close the table
+      html += `</tbody>
+         </table>`;
     } else if (fileName === 'PlayerInventorySaveData.json') {
       // Get the ItemBlocks array from the JSON
       const itemBlocks = jsonData.Data.PlayerInventory.ItemInstanceManagerData.ItemBlocks;
