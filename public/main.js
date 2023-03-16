@@ -95,7 +95,8 @@ fileInput.addEventListener('change', () => {
 
       // Start the table
       html +=
-        `<table class="table table-dark">
+        `<input type="text" id="searchInput" class="form-control form-control-dark mb-3" placeholder="Search by Item Name">
+         <table class="table table-dark">
           <thead>
             <tr>
               <th scope="col">Item ID</th>
@@ -154,6 +155,35 @@ fileInput.addEventListener('change', () => {
 
       maxButton.addEventListener('click', () => {
         totalCountInput.value = itemData.max;
+      });
+    });
+
+    // Table filter/search
+    // Get the search input element by its ID
+    const searchInput = document.getElementById('searchInput');
+    // Get the table body element (assuming there's only one table in the page)
+    const tableBody = document.querySelector('table tbody');
+
+    // Add an event listener to the search input for the 'input' event, which is triggered whenever the user types in the input field
+    searchInput.addEventListener('input', () => {
+      // Get the search input value and convert it to uppercase for case-insensitive search
+      const filter = searchInput.value.toUpperCase();
+
+      // Loop through all the rows in the table body
+      tableBody.querySelectorAll('tr').forEach(row => {
+        // Find the item name cell in the current row by selecting the 'td' element with an ID starting with "itemName-"
+        const itemNameCell = row.querySelector('td[id^="itemName-"]');
+        // Get the text content of the item name cell
+        const itemName = itemNameCell.textContent || itemNameCell.innerText;
+
+        // Check if the item name contains the search input value (case-insensitive)
+        if (itemName.toUpperCase().indexOf(filter) > -1) {
+          // If the item name matches the search input, display the row
+          row.style.display = '';
+        } else {
+          // If the item name does not match the search input, hide the row
+          row.style.display = 'none';
+        }
       });
     });
   });
