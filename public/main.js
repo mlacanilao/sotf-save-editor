@@ -95,7 +95,7 @@ fileInput.addEventListener('change', () => {
 
       // Start the table
       html +=
-        `<table class="table">
+        `<table class="table table-dark">
           <thead>
             <tr>
               <th scope="col">Item ID</th>
@@ -123,8 +123,8 @@ fileInput.addEventListener('change', () => {
 
         html +=
           `<tr>
-             <td class="text-muted" id="itemId-${itemId}">${itemId}</td>
-             <td class="text-muted" id="itemName-${itemId}">${itemName}</td>
+             <td class="text-white" id="itemId-${itemId}">${itemId}</td>
+             <td class="text-white" id="itemName-${itemId}">${itemName}</td>
              <td>
                <div class="input-group">
                  <input type="text" class="form-control" id="totalCount-${itemId}" value="${totalCount}">
