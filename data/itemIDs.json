@@ -658,7 +658,7 @@
   },
   {
     "itemId": "420",
-    "name": "C4Brick",
+    "name": "C4 Brick",
     "max": 10,
     "manuallyVerified": true,
     "UniqueItems": {}
@@ -1401,7 +1401,7 @@
   },
   {
     "itemId": "498",
-    "name": "GRABSLaser Pointer",
+    "name": "GRABS Laser Pointer",
     "max": 1,
     "manuallyVerified": false,
     "UniqueItems": {}

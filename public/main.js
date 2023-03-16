@@ -86,7 +86,8 @@ fileInput.addEventListener('change', () => {
       });
 
       // Close the table
-      html += `</tbody>
+      html +=
+        `</tbody>
          </table>`;
     } else if (fileName === 'PlayerInventorySaveData.json') {
       // Get the ItemBlocks array from the JSON
@@ -122,12 +123,12 @@ fileInput.addEventListener('change', () => {
 
         html +=
           `<tr>
-             <td class="text-muted" id="itemId">${itemId}</td>
-             <td class="text-muted" id="itemName">${itemName}</td>
+             <td class="text-muted" id="itemId-${itemId}">${itemId}</td>
+             <td class="text-muted" id="itemName-${itemId}">${itemName}</td>
              <td>
                <div class="input-group">
-                 <input type="text" class="form-control" id="totalCount" value="${totalCount}">
-                 <button class="btn btn-outline-secondary" type="button" id="maxButton">Max</button>
+                 <input type="text" class="form-control" id="totalCount-${itemId}" value="${totalCount}">
+                 <button class="btn btn-outline-secondary" type="button" id="maxButton-${itemId}">Max</button>
                </div>
              </td>
            </tr>`;
@@ -137,6 +138,17 @@ fileInput.addEventListener('change', () => {
       html +=
         `</tbody>
          </table>`;
+
+      // Add event listeners to the "Max" buttons
+      itemIDsFile.forEach(itemData => {
+        const itemId = itemData.itemId;
+        const maxButton = document.getElementById(`maxButton-${itemId}`);
+        const totalCountInput = document.getElementById(`totalCount-${itemId}`);
+
+        maxButton.addEventListener('click', () => {
+          totalCountInput.value = itemData.max;
+        });
+      });
     }
 
     // DEBUG
