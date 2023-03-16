@@ -127,7 +127,7 @@ fileInput.addEventListener('change', () => {
              <td class="text-white" id="itemName-${itemId}">${itemName}</td>
              <td>
                <div class="input-group">
-                 <input type="text" class="form-control" id="totalCount-${itemId}" value="${totalCount}">
+                 <input type="text" class="form-control bg-dark text-white" id="totalCount-${itemId}" value="${totalCount}">
                  <button class="btn btn-outline-light" type="button" id="maxButton-${itemId}">Max</button>
                </div>
              </td>
