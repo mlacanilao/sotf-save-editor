@@ -52,16 +52,17 @@ fileInput.addEventListener('change', () => {
       const structures = jsonData.Data.Constructions.Structures;
 
       // Start the table
-      html += `<table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Type ID</th>
-                <th scope="col">Position X</th>
-                <th scope="col">Position Y</th>
-                <th scope="col">Position Z</th>
-              </tr>
-            </thead>
-            <tbody>`;
+      html +=
+        `<table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Type ID</th>
+              <th scope="col">Position X</th>
+              <th scope="col">Position Y</th>
+              <th scope="col">Position Z</th>
+            </tr>
+          </thead>
+          <tbody>`;
 
       // Loop through the structures and create HTML for each one
       structures.forEach(structure => {
@@ -74,12 +75,13 @@ fileInput.addEventListener('change', () => {
           const typeID = structure[0].TypeID;
           console.log(`typeID: ${typeID}`);
 
-          html += `<tr>
-                 <td><input type="text" class="form-control" id="typeID" value="${typeID}" disabled></td>
-                 <td><input type="text" class="form-control" id="position" value="${position.x}"></td>
-                 <td><input type="text" class="form-control" id="position" value="${position.y}"></td>
-                 <td><input type="text" class="form-control" id="position" value="${position.z}"></td>
-               </tr>`;
+          html +=
+            `<tr>
+               <td><input type="text" class="form-control" id="typeID" value="${typeID}" disabled></td>
+               <td><input type="text" class="form-control" id="position" value="${position.x}"></td>
+               <td><input type="text" class="form-control" id="position" value="${position.y}"></td>
+               <td><input type="text" class="form-control" id="position" value="${position.z}"></td>
+             </tr>`;
         }
       });
 
@@ -89,6 +91,18 @@ fileInput.addEventListener('change', () => {
     } else if (fileName === 'PlayerInventorySaveData.json') {
       // Get the ItemBlocks array from the JSON
       const itemBlocks = jsonData.Data.PlayerInventory.ItemInstanceManagerData.ItemBlocks;
+
+      // Start the table
+      html +=
+        `<table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Item Name</th>
+              <th scope="col">Item ID</th>
+              <th scope="col">Total Count</th>
+            </tr>
+          </thead>
+          <tbody>`;
 
       // Loop through the item blocks and create HTML for each one
       itemBlocks.forEach(itemBlock => {
@@ -105,27 +119,18 @@ fileInput.addEventListener('change', () => {
           const totalCount = itemBlock.TotalCount;
           console.log(`totalCount: ${totalCount}`);
 
-          html += `<div class="mb-3">
-            <div class="input-group">
-              <span class="input-group-text">Item Name</span>
-              <input type="text" class="form-control" id="itemName" value="${itemName}" disabled>
-            </div>
-          </div>`;
-          html += `<div class="mb-3">
-            <div class="input-group">
-              <span class="input-group-text">Item ID</span>
-              <input type="text" class="form-control" id="itemId" value="${itemId}" disabled>
-            </div>
-          </div>`;
-          html += `<div class="mb-3">
-            <div class="input-group">
-              <span class="input-group-text">Total Count</span>
-              <input type="text" class="form-control" id="totalCount" value="${totalCount}">
-            </div>
-          </div>`;
-          html += '<hr/>';
+          html +=
+            `<tr>
+               <td><input type="text" class="form-control" id="itemName" value="${itemName}" disabled></td>
+               <td><input type="text" class="form-control" id="itemId" value="${itemId}" disabled></td>
+               <td><input type="text" class="form-control" id="totalCount" value="${totalCount}"></td>
+             </tr>`;
         }
       });
+
+      // Close the table
+      html += `</tbody>
+         </table>`;
     }
 
     // DEBUG
